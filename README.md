@@ -2,7 +2,7 @@
 
 Tämä on **Ohjelmistotekniikan harjoitustyö**. Tällä hetkellä harjoitustyöhön kuuluu vasta ensimmäisen viikonlaskutehtävät, mutta myöhemmin tilanteen olisi tarkoitus *päivittyä*.
 
-## LINKIT
+## VIIKKO 1
 Ohessa on linkit ensimmäiseen viikon palautuksiin.
 
 Tree:
