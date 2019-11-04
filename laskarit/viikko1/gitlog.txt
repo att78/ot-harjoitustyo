@@ -1,3 +1,4 @@
+Gitlog:
 tallbera@lx9-fuxi146:~/Ohjelmistotekniikka/ot_viikko1/tiedostoja$ git log --stat|cat
 commit c9711a4af4ca6a8617442327e3548b3fe4538119
 Author: Auli Tallberg <auli.tallberg@gmail.com>
