@@ -1,6 +1,6 @@
 # HARJOITUSTYÖ
 
-Tämä on **Ohjelmistotekniikan harjoitustyö**. Tällä hetkellä harjoitustyöhön kuuluu vasta ensimmäisen viikonlaskutehtävät, mutta myöhemmin tilanteen olisi tarkoitus *päivittyä*.
+Tämä on **Ohjelmistotekniikan harjoitustyö**. Tällä hetkellä harjoitustyöhön kuuluu vasta ensimmäisen viikonlaskutehtävät, mutta myöhemmin tilanne voi tarvittaessa *päivittyä*. 
 
 ## VIIKKO 1
 Ohessa on linkit ensimmäiseen viikon palautuksiin.
