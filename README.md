@@ -13,5 +13,7 @@ Tree:
 Gitlog:
 [Linkki gitlog.txt:hen](https://github.com/att78/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
+
+## VIIKKO 2
 Työaikakirjanpito:
 [Linkki kirjanpito.odt:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kirjanpito.odt)
