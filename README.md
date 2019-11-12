@@ -23,7 +23,7 @@ Linkit harjoitustehtävien kuviin:
 
 
 Työaikakirjanpito:
-[Linkki kirjanpito.odt:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kirjanpito.odt)
+[Linkki kirjanpito.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kirjanpito.md)
 
 Alustava vaatimusmäärittely:
 [Linkki maarittely.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/maarittely.md)
