@@ -26,5 +26,5 @@ Työaikakirjanpito:
 [Linkki kirjanpito.odt:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kirjanpito.odt)
 
 Alustava vaatimusmäärittely:
-[Linkki maarittely.odt:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/maarittely.odt)
+[Linkki maarittely.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/maarittely.md)
 
