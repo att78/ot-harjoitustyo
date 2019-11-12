@@ -19,7 +19,7 @@ Gitlog:
 Linkit harjoitustehtävien kuviin:
 
 [Yleiskuva](https://github.com/att78/ot-harjoitustyo/blob/master/laskarit/viikko2/unicafeCoverage1.png)
-[Kassapaate](https://github.com/att78/ot-harjoitustyo/blob/master/laskarit/viikko2/unicafeCoverage2.png)
+[Kassapaate](https://github.com/att78/ot-harjoitustyo/blob/master/laskarit/viikko2/UnicafeCoverage2.png)
 
 
 Työaikakirjanpito:
