@@ -6,7 +6,7 @@
 | 11.11   | 1       | Dokumentaatio
 | 16.11   | 2,5     | Ohjelmoinnin aloitus
 | 17.11   | 2       | JUnit-testit
-
+| 19.11   | 3       | JUnit-testit, kuvien tarkistus
 
 
 
