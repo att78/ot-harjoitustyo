@@ -17,24 +17,23 @@ import static org.junit.Assert.*;
  * @author tallbera
  */
 public class FunctionTest {
-    
+
     public FunctionTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
-        
-        
+
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -44,29 +43,42 @@ public class FunctionTest {
     //
     // @Test
     // public void hello() {}
-    
     @Test
-    public void YWhenXIsZero(){
-    
-        Function function =new Function(1,1,0);
-        
-        double result=function.solveYatXAxis();
+    public void YWhenXIsZero() {
+
+        Function function = new Function(1, 1, 0);
+        double result = function.solveYatXAxis();
         double zero = 0;
+        assertTrue(result == zero);
         
-        assertTrue(result==zero);
-           
+        Function function2 = new Function(1,-1,1);        
+        double result2 = function2.solveYatXAxis();       
+        assertTrue(result2==1);
+        
+        Function function3 = new Function(1,0,1);
+        double result3= function3.solveYatXAxis();
+        assertTrue(result3==1);
+        
     }
-    
+
     @Test
-    public void XWhenYIsZero(){
-        
-    Function function =new Function(1,1,0);
-        
-        double result=function.solveXatYAxis();
+    public void XWhenYIsZero() {
+
+        Function function = new Function(1, 1, 0);
+
+        double result = function.solveXatYAxis();
         double zero = 0;
+        assertTrue(result == zero);
         
-        assertTrue(result==zero);
-               
+        Function function2 = new Function(-1,1,1);
+        double result2 = function2.solveXatYAxis();
+        assertTrue(result2==1);
+        
+        
+        Function function3 = new Function(0,1,1);
+        double result3 = function3.solveXatYAxis();
+        assertTrue(result3==1);
+
     }
-    
+
 }

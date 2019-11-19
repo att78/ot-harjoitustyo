@@ -18,6 +18,7 @@ public class Function {
     double resultY;
     double resultX;
 
+    // both y and x should not be allowed to be zero
     public Function(double y, double x, double c) {
         this.y = y;
         this.x = x;
