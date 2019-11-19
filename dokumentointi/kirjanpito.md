@@ -8,6 +8,8 @@
 | 17.11   | 2       | JUnit-testit
 | 19.11   | 3       | JUnit-testien parantelu
 
+ Yhteensä  15h
+
 
 
 
