@@ -7,8 +7,10 @@
 | 16.11   | 2,5     | Ohjelmoinnin aloitus
 | 17.11   | 2       | JUnit-testit
 | 19.11   | 3       | JUnit-testien parantelu
+| 22.11   | 3       | Matriisien puljaus, skalaaritulo
 
- Yhteensä  15h
+
+ Yhteensä  13h
 
 
 
