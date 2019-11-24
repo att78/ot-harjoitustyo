@@ -24,5 +24,7 @@ public class Vector {
     public ArrayList<Double> getValues() {
         return values;
     }
+    
+   // vector length could be calculated with scalarproduct
 
 }
