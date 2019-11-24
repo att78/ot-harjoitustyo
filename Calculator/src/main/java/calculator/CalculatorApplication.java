@@ -16,8 +16,7 @@ public class CalculatorApplication {
     public static void main(String[] args) {
 
 // does nothing at the moment
-    UI.main(args);
-    
+        UI.main(args);
 
     }
 
