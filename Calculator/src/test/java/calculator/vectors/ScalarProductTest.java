@@ -52,7 +52,14 @@ public class ScalarProductTest {
         ArrayList<Double> valuesB = new ArrayList();
         valuesB.add(2.0); valuesB.add(2.0); valuesB.add(2.0);
         
+        Vector a = new Vector(valuesA);
+        Vector b = new Vector(valuesB);
+        ScalarProduct s = new ScalarProduct(a,b);
+        s.scalarProduct();
+        assertTrue(s.getScaProduct()== 6.0);
+        // next grow one of the vectors longer, so calculation can no longer be done
         
     }
+    
     
 }

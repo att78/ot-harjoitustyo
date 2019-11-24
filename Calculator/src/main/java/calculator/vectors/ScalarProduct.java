@@ -28,11 +28,23 @@ public class ScalarProduct {
         double result = 0;
         if (a.getValues().size() == b.getValues().size()) {
             for (int i = 0; i < a.getValues().size(); i++) {
-                scaProduct = a.getValues().get(i) + b.getValues().get(i);
+                scaProduct += (a.getValues().get(i) * b.getValues().get(i));
             }
         } else {
             System.out.println("Vectors are different size, cannot be calculated");
         }
+    }
+
+    public double getScaProduct() {
+        return scaProduct;
+    }
+
+    public Vector getA() {
+        return a;
+    }
+
+    public Vector getB() {
+        return b;
     }
 
 }
