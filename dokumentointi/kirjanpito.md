@@ -8,9 +8,11 @@
 | 17.11   | 2       | JUnit-testit
 | 19.11   | 3       | JUnit-testien parantelu
 | 22.11   | 3       | Matriisien puljaus, skalaaritulo
+| 23.11   | 5       | JavaFX:n ja Checkstylen käyttöönotto, graafisen UI:n rakentelu
+| 24.11   | 2       | graafista UI:ta, skalaaritulon korjailua+JUnitin tekoa.
 
 
- Yhteensä  13h
+ Yhteensä  20h
 
 
 
