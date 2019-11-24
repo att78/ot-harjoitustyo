@@ -18,8 +18,8 @@ public class Matrix {
     int columns;
     double[][] matrix;
     ArrayDeque<Double> values = new ArrayDeque();
-    boolean row =false;
-    boolean column=false;
+    boolean row = false;
+    boolean column = false;
 
     public Matrix(int rows, int columns) {
 
@@ -30,8 +30,6 @@ public class Matrix {
 
     //Filling the Matrix with numbers
     //Give the numbers starting from first row and first column and continue filing the first row. 
-    
-    
     //turha?
     public void fillTheMatrixRowWise() {
 
@@ -41,27 +39,25 @@ public class Matrix {
             }
         }
     }
-    
-    public void giveNumbersRowWise(double number){
-        
-        if(column==false){
-        
+
+    public void giveNumbersRowWise(double number) {
+
+        if (column == false) {
+
             values.add(number);
-            row =true;        
+            row = true;
         }
     }
-    
-    public void giveNumbersColumnWise(double number){
-        
-        if(row==false){
+
+    public void giveNumbersColumnWise(double number) {
+
+        if (row == false) {
             values.add(number);
-            column=true;
+            column = true;
         }
-           
+
     }
-    
-    
-    
+
     public int getRows() {
         return rows;
     }
@@ -69,8 +65,5 @@ public class Matrix {
     public int getColumns() {
         return columns;
     }
-    
-    
-    
 
 }

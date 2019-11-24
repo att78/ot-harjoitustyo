@@ -5,17 +5,20 @@
  */
 package calculator;
 
+import calculator.ui.UI;
+
 /**
  *
  * @author tallbera
  */
 public class CalculatorApplication {
-        
-        
- public static void main(String[] args){
+
+    public static void main(String[] args) {
 
 // does nothing at the moment
-
-}
+    UI.main(args);
     
+
+    }
+
 }

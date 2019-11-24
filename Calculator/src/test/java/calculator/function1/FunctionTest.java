@@ -50,15 +50,15 @@ public class FunctionTest {
         double result = function.solveYatXAxis();
         double zero = 0;
         assertTrue(result == zero);
-        
-        Function function2 = new Function(1,-1,1);        
-        double result2 = function2.solveYatXAxis();       
-        assertTrue(result2==1);
-        
-        Function function3 = new Function(1,0,1);
-        double result3= function3.solveYatXAxis();
-        assertTrue(result3==1);
-        
+
+        Function function2 = new Function(1, -1, 1);
+        double result2 = function2.solveYatXAxis();
+        assertTrue(result2 == 1);
+
+        Function function3 = new Function(1, 0, 1);
+        double result3 = function3.solveYatXAxis();
+        assertTrue(result3 == 1);
+
     }
 
     @Test
@@ -69,15 +69,14 @@ public class FunctionTest {
         double result = function.solveXatYAxis();
         double zero = 0;
         assertTrue(result == zero);
-        
-        Function function2 = new Function(-1,1,1);
+
+        Function function2 = new Function(-1, 1, 1);
         double result2 = function2.solveXatYAxis();
-        assertTrue(result2==1);
-        
-        
-        Function function3 = new Function(0,1,1);
+        assertTrue(result2 == 1);
+
+        Function function3 = new Function(0, 1, 1);
         double result3 = function3.solveXatYAxis();
-        assertTrue(result3==1);
+        assertTrue(result3 == 1);
 
     }
 
