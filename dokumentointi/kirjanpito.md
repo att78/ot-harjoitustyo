@@ -10,9 +10,9 @@
 | 22.11   | 3       | Matriisien puljaus, skalaaritulo
 | 23.11   | 5       | JavaFX:n ja Checkstylen käyttöönotto, graafisen UI:n rakentelu
 | 24.11   | 4       | graafista UI:ta, skalaaritulon korjailua+JUnitin tekoa. "Jotain toimivaa". Koodin siistimistä.
-| 25.11   | 1       | Koodin siistimistä, raportoinnin päivittämistä.
+| 25.11   | 2       | Koodin siistimistä, loogista validointia, raportoinnin päivittämistä.
 |                   |
-| Yhteensä  23h     |
+| Yhteensä  24h     |
 
 
 
