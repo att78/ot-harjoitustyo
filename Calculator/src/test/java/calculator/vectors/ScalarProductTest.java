@@ -60,7 +60,6 @@ public class ScalarProductTest {
         ScalarProduct s = new ScalarProduct(a, b);
         s.scalarProduct();
         assertTrue(s.getScaProduct() == 6.0);
-
     }
 
 }
