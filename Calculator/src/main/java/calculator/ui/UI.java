@@ -52,12 +52,19 @@ public class UI extends Application {
         Label yLabel = new Label("Give y:");
         TextField yValue = new TextField();
         yValue.setMaxWidth(200);
+
+        yValue.textProperty().addListener(new NumberListener(yValue));
+
         Label xLabel = new Label("Give x:");
         TextField xValue = new TextField();
-        xValue.setMaxWidth(200);        
+        xValue.setMaxWidth(200);
+        xValue.textProperty().addListener(new NumberListener(xValue));
+
         Label cLabel = new Label("Give c:");
         TextField cValue = new TextField();
         cValue.setMaxWidth(200);
+        cValue.textProperty().addListener(new NumberListener(cValue));
+
         Button solve = new Button("Solve x and y");
         Label solution = new Label("");
         VBox functionInput = new VBox();
@@ -87,10 +94,6 @@ public class UI extends Application {
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return viewFunction;
-    }
-
-    public static void main(String[] args) {
-        launch(UI.class);
     }
 
 }
