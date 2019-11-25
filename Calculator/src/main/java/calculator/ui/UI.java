@@ -54,13 +54,13 @@ public class UI extends Application {
         yValue.setMaxWidth(200);
         Label xLabel = new Label("Give x:");
         TextField xValue = new TextField();
-        xValue.setMaxWidth(200);
+        xValue.setMaxWidth(200);        
         Label cLabel = new Label("Give c:");
         TextField cValue = new TextField();
         cValue.setMaxWidth(200);
         Button solve = new Button("Solve x and y");
         Label solution = new Label("");
-        VBox functionInput = new VBox();        
+        VBox functionInput = new VBox();
         functionInput.getChildren().add(yLabel);
         functionInput.getChildren().add(yValue);
         functionInput.getChildren().add(xLabel);
@@ -69,8 +69,8 @@ public class UI extends Application {
         functionInput.getChildren().add(cValue);
         functionInput.getChildren().add(solve);
         functionInput.getChildren().add(solution);
-        
-        solve.setOnAction((event)->{
+
+        solve.setOnAction((event) -> {
             double givenY = Double.parseDouble(yValue.getText());
             double givenX = Double.parseDouble(xValue.getText());
             double givenC = Double.parseDouble(cValue.getText());
@@ -78,14 +78,12 @@ public class UI extends Application {
             String answer = f.toString();
             solution.setText(answer);
         });
-        
+
         functionInput.setSpacing(10);
-                
+
         viewFunction.setPrefSize(400, 400);
         viewFunction.setBottom(main);
         viewFunction.setCenter(functionInput);
-        
-        
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return viewFunction;

@@ -15,8 +15,7 @@ public class Function {
     double y;
     double x;
     double c;
-    double resultY;
-    double resultX;
+    
 
     // both y and x should not be allowed to be zero
     public Function(double y, double x, double c) {
@@ -52,7 +51,6 @@ public class Function {
 
         //at Y-Axis y is zero;
         double result = cCalc / xCalc;
-        resultX = result;
         return result;
     }
 
@@ -71,8 +69,7 @@ public class Function {
         double yCalc = y * multiplier;
         double cCalc = c * multiplier;
 
-        double result = cCalc / yCalc;
-        resultY = result;
+        double result = cCalc / yCalc;        
         return result;
     }
 
@@ -81,7 +78,7 @@ public class Function {
         double solve1 = solveXatYAxis();
         double solve2 = solveYatXAxis();
 
-        String answer = "at Y-axis x-value is " + resultX + " and at X-axis y-value is " + resultY;
+        String answer = "At Y-axis x-value is " +solve1 + " and at X-axis y-value is " + solve2;
 
         return answer;
     }

@@ -30,7 +30,7 @@ public class Matrix {
 
     //Filling the Matrix with numbers
     //Give the numbers starting from first row and first column and continue filing the first row. 
-    //turha?
+    //not needed?
     public void fillTheMatrixRowWise() {
 
         for (int i = 0; i < this.rows; i++) {

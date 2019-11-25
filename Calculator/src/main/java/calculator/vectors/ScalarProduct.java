@@ -25,13 +25,9 @@ public class ScalarProduct {
 
     public void scalarProduct() {
 
-        double result = 0;
-        if (a.getValues().size() == b.getValues().size()) {
-            for (int i = 0; i < a.getValues().size(); i++) {
-                scaProduct += (a.getValues().get(i) * b.getValues().get(i));
-            }
-        } else {
-            System.out.println("Vectors are different size, cannot be calculated");
+        for (int i = 0; i < a.getValues().size(); i++) {
+            scaProduct += (a.getValues().get(i) * b.getValues().get(i));
+
         }
     }
 
