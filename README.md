@@ -12,3 +12,6 @@ Työaikakirjanpito:
 Alustava vaatimusmäärittely:
 [Linkki maarittely.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/maarittely.md)
 
+Alustava kuva arkkitehtuurin rungosta:
+[Linkki arkkitehtuuri.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
+
