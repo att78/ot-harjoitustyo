@@ -24,7 +24,15 @@ public class Vector {
     public ArrayList<Double> getValues() {
         return values;
     }
-    
-   // vector length could be calculated with scalarproduct
+
+    // vector length could be calculated with scalarproduct
+    public double vectorLength() {
+        Vector v = new Vector(this.values);
+        ScalarProduct length = new ScalarProduct(v, v);
+        length.scalarProduct();
+        double result = length.getScaProduct();
+
+        return result;
+    }
 
 }

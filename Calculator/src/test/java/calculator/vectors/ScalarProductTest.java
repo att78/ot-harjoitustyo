@@ -61,5 +61,19 @@ public class ScalarProductTest {
         s.scalarProduct();
         assertTrue(s.getScaProduct() == 6.0);
     }
+    
+    @Test
+    public void vectorLength(){
+    ArrayList<Double> values = new ArrayList();
+    values.add(1.0);
+    values.add(1.0);
+    values.add(1.0);
+    
+    Vector v = new Vector(values);
+    double result = v.vectorLength();
+    assertTrue(result==3);
+    
+       
+    }
 
 }
