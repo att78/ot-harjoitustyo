@@ -37,11 +37,20 @@ public class UI extends Application {
 
     public BorderPane frontPage(BorderPane view) {
         Button function1 = new Button("Simple Function");
+        Button scalarPro = new Button("ScalarProduct");
+        VBox list = new VBox();
         BorderPane viewMain = new BorderPane();
+        list.getChildren().add(new Label("List of operations:"));
+        list.getChildren().add(function1);
+        list.getChildren().add(scalarPro);
         viewMain.setPrefSize(400, 400);
-        viewMain.setTop(new Label("List of available operations"));
-        viewMain.setCenter(function1);
+        viewMain.setCenter(list);
+        //viewMain.setTop(new Label("List of available operations"));
+        //viewMain.setCenter(function1);
+
         function1.setOnAction((event) -> view.setCenter(functionPage(view)));
+        scalarPro.setOnAction((event) -> view.setCenter(scalarPage(view)));
+
         return viewMain;
     }
 
@@ -94,6 +103,29 @@ public class UI extends Application {
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return viewFunction;
+    }
+
+    public BorderPane scalarPage(BorderPane view) {
+        BorderPane scalar = new BorderPane();
+        scalar.setPrefSize(400, 400);
+        Label headLine = new Label("Give vectors in form 1,2,3");
+        Label firstVector = new Label("First Vector");
+        TextField vector1 = new TextField();
+        vector1.setMaxWidth(200);
+        Label secondVector = new Label("Second Vector");
+        TextField vector2 = new TextField();
+        vector2.setMaxWidth(200);
+        Button main = new Button("Back to Main");
+        VBox content = new VBox();
+        content.getChildren().add(headLine);
+        content.getChildren().add(firstVector);
+        content.getChildren().add(vector1);
+        content.getChildren().add(secondVector);
+        content.getChildren().add(vector2);
+        content.getChildren().add(main);        
+        scalar.setCenter(content);
+        main.setOnAction((event) -> view.setCenter(frontPage(view)));
+        return scalar;
     }
 
 }
