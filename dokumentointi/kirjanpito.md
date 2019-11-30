@@ -12,8 +12,9 @@
 | 24.11   | 4       | graafista UI:ta, skalaaritulon korjailua+JUnitin tekoa. "Jotain toimivaa". Koodin siistimistä.
 | 25.11   | 2       | Koodin siistimistä, loogista validointia, raportoinnin päivittämistä.
 | 28.11   | 2       | Vektorin pituus+skalaaritulon ui  
+| 30.11   | 3       | Pistetulo toimii, jar-paketti-harjoittelua
 |                   |
-| Yhteensä  26h     |
+| Yhteensä  29h     |
 
 
 
