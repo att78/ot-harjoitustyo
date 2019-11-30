@@ -5,6 +5,7 @@
  */
 package calculator.matrix;
 
+import calculator.vectors.Vector;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 
@@ -14,56 +15,22 @@ import java.util.ArrayList;
  */
 public class Matrix {
 
-    int rows;
-    int columns;
-    double[][] matrix;
-    ArrayDeque<Double> values = new ArrayDeque();
-    boolean row = false;
-    boolean column = false;
+   ArrayList<Vector> matrix;
+  
+    
 
-    public Matrix(int rows, int columns) {
+    //every vector on the list must be same length and it should be checked
+   
+   public Matrix(ArrayList<Vector> matrix){
+   
+       this.matrix = matrix;
+   
+   }
 
-        this.rows = rows;
-        this.columns = columns;
-        this.matrix = new double[rows][columns];
-    }
+   
 
-    //Filling the Matrix with numbers
-    //Give the numbers starting from first row and first column and continue filing the first row. 
-    //not needed?
-    public void fillTheMatrixRowWise() {
+  
 
-        for (int i = 0; i < this.rows; i++) {
-            for (int j = 0; j < this.columns; j++) {
-                values.getFirst();
-            }
-        }
-    }
-
-    public void giveNumbersRowWise(double number) {
-
-        if (column == false) {
-
-            values.add(number);
-            row = true;
-        }
-    }
-
-    public void giveNumbersColumnWise(double number) {
-
-        if (row == false) {
-            values.add(number);
-            column = true;
-        }
-
-    }
-
-    public int getRows() {
-        return rows;
-    }
-
-    public int getColumns() {
-        return columns;
-    }
+  
 
 }

@@ -46,7 +46,7 @@ public class ScalarProduct {
     public String toString(){
     
         
-    String answer = "ScalarProduct of " +this.a.toString()+" and "+this.b.toString()+" is "+scaProduct;
+    String answer = "ScalarProduct of " +this.a.toString()+" and "+this.b.toString() +" is "+scaProduct;
      return answer;
     }
     

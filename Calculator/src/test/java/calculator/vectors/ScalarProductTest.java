@@ -58,22 +58,29 @@ public class ScalarProductTest {
         Vector a = new Vector(valuesA);
         Vector b = new Vector(valuesB);
         ScalarProduct s = new ScalarProduct(a, b);
+        double result = 0;
         s.scalarProduct();
+        result = s.getScaProduct();
+        assertTrue(result == 6.0);
         assertTrue(s.getScaProduct() == 6.0);
+        assertTrue(s.toString().equals("ScalarProduct of " +a.toString()+" and "+b.toString() +" is "+s.getScaProduct()));
     }
-    
+
     @Test
-    public void vectorLength(){
-    ArrayList<Double> values = new ArrayList();
-    values.add(1.0);
-    values.add(1.0);
-    values.add(1.0);
-    
-    Vector v = new Vector(values);
-    double result = v.vectorLength();
-    assertTrue(result==3);
-    
-       
+    public void vectorLength() {
+        ArrayList<Double> values = new ArrayList();
+        values.add(1.0);
+        values.add(1.0);
+        values.add(1.0);
+
+        Vector v = new Vector(values);
+        double result = v.vectorLength();
+        assertTrue(result == 3);
+
     }
+
+
+
+    
 
 }
