@@ -42,5 +42,13 @@ public class ScalarProduct {
     public Vector getB() {
         return b;
     }
+    
+    public String toString(){
+    
+        
+    String answer = "ScalarProduct of " +this.a.toString()+" and "+this.b.toString()+" is "+scaProduct;
+     return answer;
+    }
+    
 
 }

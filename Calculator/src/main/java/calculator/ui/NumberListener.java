@@ -25,9 +25,16 @@ public class NumberListener implements ChangeListener<String> {
     @Override
     public void changed(ObservableValue<? extends String> observable, String oldValue,
             String newValue) {
-        if (!newValue.matches("\\d*(\\.\\d*)?")) {
+        if (!newValue.matches(getComparison())) {
             textField.setText(oldValue);
         }
     }
+    
+    protected String getComparison(){
+      
+        return "\\d*(\\.\\d*)?";
+    }
+    
+    
 
 }
