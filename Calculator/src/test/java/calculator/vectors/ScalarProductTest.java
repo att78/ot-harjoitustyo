@@ -63,7 +63,7 @@ public class ScalarProductTest {
         result = s.getScaProduct();
         assertTrue(result == 6.0);
         assertTrue(s.getScaProduct() == 6.0);
-        assertTrue(s.toString().equals("ScalarProduct of " +a.toString()+" and "+b.toString() +" is "+s.getScaProduct()));
+        assertTrue(s.toString().equals("ScalarProduct of " + a.toString() + " and " + b.toString() + " is " + s.getScaProduct()));
     }
 
     @Test
@@ -78,9 +78,5 @@ public class ScalarProductTest {
         assertTrue(result == 3);
 
     }
-
-
-
-    
 
 }

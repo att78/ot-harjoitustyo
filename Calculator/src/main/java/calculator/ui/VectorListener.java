@@ -16,14 +16,11 @@ public class VectorListener extends NumberListener {
     public VectorListener(TextField textField) {
         super(textField);
     }
-    
+
     @Override
-    protected String getComparison(){
-      
+    protected String getComparison() {
+
         return "(\\d*(\\.\\d*)?(\\,)?)*";
     }
-    
-    
-    
-    
+
 }

@@ -109,39 +109,37 @@ public class UI extends Application {
 
     public BorderPane scalarPage(BorderPane view) {
         BorderPane scalar = new BorderPane();
-        scalar.setPrefSize(400, 400);     
+        scalar.setPrefSize(400, 400);
         TextField vector1 = new TextField();
         vector1.setMaxWidth(200);
         vector1.textProperty().addListener(new VectorListener(vector1));
-        
+
         TextField vector2 = new TextField();
         vector2.setMaxWidth(200);
         vector2.textProperty().addListener(new VectorListener(vector2));
-        
-        
+
         Button main = new Button("Back to Main");
         Button solve = new Button("Solve");
         Label solution = new Label();
         VBox content = new VBox();
-        content.getChildren().add(new Label("Give vectors in form 1,2,3"+"\n"));
+        content.getChildren().add(new Label("Give vectors in form 1,2,3" + "\n"));
         content.getChildren().add(new Label("First Vector"));
         content.getChildren().add(vector1);
         content.getChildren().add(new Label("Second Vector"));
         content.getChildren().add(vector2);
         content.getChildren().add(solve);
         content.getChildren().add(solution);
-        content.getChildren().add(main);        
-        scalar.setCenter(content);      
-        solve.setOnAction((event)->{
-        Vector vectorFirst= new Vector(vector1.getText());
-        Vector vectorSecond = new Vector(vector2.getText());    
-        ScalarProduct sc =new ScalarProduct(vectorFirst, vectorSecond);
-        sc.scalarProduct();
-        String answer=sc.toString();
-        solution.setText(answer);
+        content.getChildren().add(main);
+        scalar.setCenter(content);
+        solve.setOnAction((event) -> {
+            Vector vectorFirst = new Vector(vector1.getText());
+            Vector vectorSecond = new Vector(vector2.getText());
+            ScalarProduct sc = new ScalarProduct(vectorFirst, vectorSecond);
+            sc.scalarProduct();
+            String answer = sc.toString();
+            solution.setText(answer);
         });
-                         
-        
+
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return scalar;
     }

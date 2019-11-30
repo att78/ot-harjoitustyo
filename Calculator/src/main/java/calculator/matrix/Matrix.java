@@ -15,22 +15,13 @@ import java.util.ArrayList;
  */
 public class Matrix {
 
-   ArrayList<Vector> matrix;
-  
-    
+    ArrayList<Vector> matrix;
 
     //every vector on the list must be same length and it should be checked
-   
-   public Matrix(ArrayList<Vector> matrix){
-   
-       this.matrix = matrix;
-   
-   }
+    public Matrix(ArrayList<Vector> matrix) {
 
-   
+        this.matrix = matrix;
 
-  
-
-  
+    }
 
 }

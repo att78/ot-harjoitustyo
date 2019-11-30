@@ -20,22 +20,20 @@ public class Vector {
         this.values = values;
 
     }
-    
-    public Vector(String numbers){
+
+    public Vector(String numbers) {
         ArrayList<Double> listOfNumbers = new ArrayList();
         String[] givenNumbers = numbers.split(",");
-        for(int i=0; i<givenNumbers.length; i++){            
-           String n = givenNumbers[i];
-           if(n==null){
-               continue;
-           }
-           double number = Double.parseDouble(n);
-           listOfNumbers.add(number);
+        for (int i = 0; i < givenNumbers.length; i++) {
+            String n = givenNumbers[i];
+            if (n == null) {
+                continue;
+            }
+            double number = Double.parseDouble(n);
+            listOfNumbers.add(number);
         }
         this.values = listOfNumbers;
     }
-    
-    
 
     public ArrayList<Double> getValues() {
         return values;
@@ -50,14 +48,12 @@ public class Vector {
 
         return result;
     }
-    
-    public String toString(){
-    
-    String answer = this.values.toString();
-    
+
+    public String toString() {
+
+        String answer = this.values.toString();
+
         return answer;
     }
-    
-    
 
 }

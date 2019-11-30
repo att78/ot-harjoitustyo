@@ -29,12 +29,10 @@ public class NumberListener implements ChangeListener<String> {
             textField.setText(oldValue);
         }
     }
-    
-    protected String getComparison(){
-      
+
+    protected String getComparison() {
+
         return "\\d*(\\.\\d*)?";
     }
-    
-    
 
 }
