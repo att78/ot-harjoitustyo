@@ -15,3 +15,27 @@ Alustava vaatimusmäärittely:
 Alustava kuva arkkitehtuurin rungosta:
 [Linkki arkkitehtuuri.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+## KOMENTORIVITOIMINNOT
+
+### Testaus
+
+Testit suoritetaan komennolla mvn test
+
+Testikattavuusraportti luodaan komennolla mvn jacoco:report
+
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto target/site/jacoco/index.html
+
+### Suoritettavan jarin generointi
+
+Komento mvn package
+
+generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.jar
+
+
+### Checkstyle
+
+Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
+
+ mvn jxr:jxr checkstyle:checkstyle
+
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
