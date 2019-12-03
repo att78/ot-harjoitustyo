@@ -13,8 +13,9 @@
 | 25.11   | 2       | Koodin siistimistä, loogista validointia, raportoinnin päivittämistä.
 | 28.11   | 2       | Vektorin pituus+skalaaritulon ui  
 | 30.11   | 3       | Pistetulo toimii, jar-paketti-harjoittelua
+| 3.12    | 3       | Testausta, sekvenssikaaviota, dokumentoinnin ajalle saattoa.
 |                   |
-| Yhteensä  29h     |
+| Yhteensä  32h     |
 
 
 
