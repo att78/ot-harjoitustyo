@@ -20,7 +20,7 @@ public class VectorListener extends NumberListener {
     @Override
     protected String getComparison() {
 
-        return "(\\d*(\\.\\d*)?(\\,)?)*";
+        return "((-)?(\\d{1,}\\.{0,1}\\d*)?,?)*";
     }
 
 }

@@ -32,7 +32,7 @@ public class NumberListener implements ChangeListener<String> {
 
     protected String getComparison() {
 
-        return "\\d*(\\.\\d*)?";
+        return "(-)?\\d*(\\.\\d*)?";
     }
 
 }
