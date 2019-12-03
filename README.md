@@ -15,6 +15,12 @@ Alustava vaatimusmäärittely:
 Alustava kuva arkkitehtuurin rungosta:
 [Linkki arkkitehtuuri.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+
+## RELEASES
+1. Release:
+[Linkki 1. versioon](https://github.com/att78/ot-harjoitustyo/releases/tag/viikko5)
+
+
 ## KOMENTORIVITOIMINNOT
 
 ### Testaus
