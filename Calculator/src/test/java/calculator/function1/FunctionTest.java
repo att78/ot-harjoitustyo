@@ -80,4 +80,14 @@ public class FunctionTest {
 
     }
 
+    @Test
+    public void toStringTest() {
+        Function function = new Function(1, 1, 0);
+        double resultX = function.solveXatYAxis();
+        double resultY = function.solveYatXAxis();
+
+        assertEquals(function.toString(), "At Y-axis x-value is " + resultX + " and at X-axis y-value is " + resultY);
+
+    }
+
 }

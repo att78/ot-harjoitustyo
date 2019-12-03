@@ -25,5 +25,8 @@ public class MatrixProduct {
         this.matrixB = matrixB;
 
     }
+    
+    
+    
 
 }
