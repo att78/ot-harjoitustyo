@@ -1,7 +1,7 @@
 # HARJOITUSTYÖ
 
 Tämä on **Ohjelmistotekniikan harjoitustyö**. Aiheena on funktiolaskin. 
-Tässä vaiheessa ohjelmassa toimii vain yhden lineaarisen suoran ratkaiseminen niin x-akselin kuin y-akselin suhteen. Myöhemmin olisi tarkoitus lisätä lisää toimintoja.
+Tässä vaiheessa ohjelmassa toimii yhden lineaarisen suoran ratkaiseminen niin x-akselin kuin y-akselin suhteen ja kahden vektorin pistetulo. Myöhemmin olisi tarkoitus lisätä lisää toimintoja.
 
 
 ## DOKUMENTAATIO
