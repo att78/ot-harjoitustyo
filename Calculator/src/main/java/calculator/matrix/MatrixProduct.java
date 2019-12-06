@@ -5,7 +5,10 @@
  */
 package calculator.matrix;
 
+import calculator.vectors.ScalarProduct;
+import calculator.vectors.Vector;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,7 +18,7 @@ public class MatrixProduct {
 
     Matrix matrixA;
     Matrix matrixB;
-    ArrayDeque<Double> results = new ArrayDeque();
+    ArrayList<Vector> results = new ArrayList();
 
     //matrix B should be changed columns to rows in order to make effective calculations
     //   
@@ -25,8 +28,30 @@ public class MatrixProduct {
         this.matrixB = matrixB;
 
     }
-    
-    
-    
+
+    public ArrayList<Vector> calculateMatrixProduct() {
+
+        for (int i = 0; i < matrixA.getMatrix().size(); i++) {
+            ArrayList<Double> vector = new ArrayList();
+            for (int j = 0; j < matrixA.getMatrix().get(0).getValues().size(); j++) {
+                ScalarProduct sc = new ScalarProduct(matrixA.getMatrix().get(i), matrixB.getMatrix().get(j));
+                sc.scalarProduct();
+                //calculation of vectors here
+                double result = sc.getScaProduct();
+                vector.add(result);
+            }
+            //missing parts vectors mustbeadded to results
+            Vector rowVector = new Vector(vector);
+            results.add(rowVector);          
+        }//should it be void?
+        return results;
+
+    }
+
+    public String toString() {
+
+        Matrix answer = new Matrix(results);
+        return answer.toString();
+    }
 
 }

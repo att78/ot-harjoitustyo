@@ -24,4 +24,27 @@ public class Matrix {
 
     }
 
+    public ArrayList<Vector> getMatrix() {
+        return matrix;
+    }
+    
+    
+    
+    public String toString(){
+    
+        String result = "";
+        int vectorsAmount = this.matrix.size();
+        
+        for(int i=0; i<vectorsAmount-1;i++){
+        result += matrix.get(i).toString()+"\n";
+        
+        }
+        result +=matrix.get(vectorsAmount-1).toString();
+        
+    
+        return result;
+    }
+    
+    
+
 }
