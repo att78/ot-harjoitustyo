@@ -43,7 +43,8 @@ public class MatrixProduct {
             //missing parts vectors mustbeadded to results
             Vector rowVector = new Vector(vector);
             results.add(rowVector);
-        }//should it be void?
+        }
+        //should it be void?
         return results;
 
     }

@@ -51,8 +51,9 @@ public class History {
     public List<String> list() {
         ArrayList<String> results = new ArrayList();
         String getResults = "SELECT result, created FROM operations ORDER BY created DESC;";
-        try (Statement stmt = connection.createStatement(); 
-                ResultSet rs = stmt.executeQuery(getResults);) {
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery(getResults);
             while (rs.next()) {
                 results.add(rs.getString("result"));
             }
