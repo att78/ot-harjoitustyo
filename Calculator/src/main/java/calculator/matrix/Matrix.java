@@ -19,32 +19,42 @@ public class Matrix {
 
     //every vector on the list must be same length and it should be checked
     public Matrix(ArrayList<Vector> matrix) {
-
-        this.matrix = matrix;
-
+//        int min = matrix.get(0).getValues().size();
+//        int max = matrix.get(0).getValues().size();
+//        for (Vector v : matrix) {
+//            if (max < v.getValues().size()) {
+//                max = v.getValues().size();
+//            }
+//            if (min > v.getValues().size()) {
+//                min = v.getValues().size();
+//            }
+//        }
+//        if (min == max) {
+            this.matrix = matrix;
+//        } else {
+//            ArrayList<Double> zero = new ArrayList();
+//            zero.add(0.0);
+//            Vector v = new Vector(zero);
+//            this.matrix.add(v);
+//        }
     }
 
     public ArrayList<Vector> getMatrix() {
         return matrix;
     }
-    
-    
-    
-    public String toString(){
-    
+
+    public String toString() {
+
         String result = "";
         int vectorsAmount = this.matrix.size();
-        
-        for(int i=0; i<vectorsAmount-1;i++){
-        result += matrix.get(i).toString()+"\n";
-        
+
+        for (int i = 0; i < vectorsAmount - 1; i++) {
+            result += matrix.get(i).toString() + "\n";
+
         }
-        result +=matrix.get(vectorsAmount-1).toString();
-        
-    
+        result += matrix.get(vectorsAmount - 1).toString();
+
         return result;
     }
-    
-    
 
 }

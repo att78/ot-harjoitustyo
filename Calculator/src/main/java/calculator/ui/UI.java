@@ -9,9 +9,12 @@ package calculator.ui;
  *
  * @author tallbera
  */
+import calculator.History;
 import calculator.function1.Function;
 import calculator.vectors.ScalarProduct;
 import calculator.vectors.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -24,8 +27,15 @@ import javafx.stage.Stage;
 
 public class UI extends Application {
 
+    History history;
+
     @Override
     public void start(Stage window) {
+        try {
+            history = new History();
+        } catch (Exception ex) {
+            Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
         Button function1 = new Button("Simple Function");
         BorderPane view = new BorderPane();
@@ -35,23 +45,28 @@ public class UI extends Application {
         window.setScene(scene);
         window.setTitle("Function Calculator");
         window.show();
+
     }
 
     public BorderPane frontPage(BorderPane view) {
         Button function1 = new Button("Simple Function");
         Button scalarPro = new Button("ScalarProduct");
+        Button matrixPro = new Button("MatrixProduct");
+        Button history = new Button("History");
         VBox list = new VBox();
         BorderPane viewMain = new BorderPane();
         list.getChildren().add(new Label("List of operations:"));
         list.getChildren().add(function1);
         list.getChildren().add(scalarPro);
+        list.getChildren().add(matrixPro);
+        list.getChildren().add(history);
         viewMain.setPrefSize(400, 400);
         viewMain.setCenter(list);
-        //viewMain.setTop(new Label("List of available operations"));
-        //viewMain.setCenter(function1);
 
         function1.setOnAction((event) -> view.setCenter(functionPage(view)));
         scalarPro.setOnAction((event) -> view.setCenter(scalarPage(view)));
+        matrixPro.setOnAction((event) -> view.setCenter(matrixPage(view)));
+        history.setOnAction((event) -> view.setCenter(historyPage(view)));
 
         return viewMain;
     }
@@ -95,6 +110,7 @@ public class UI extends Application {
             Function f = new Function(givenY, givenX, givenC);
             String answer = f.toString();
             solution.setText(answer);
+            history.add(answer);
         });
 
         functionInput.setSpacing(10);
@@ -138,10 +154,44 @@ public class UI extends Application {
             sc.scalarProduct();
             String answer = sc.toString();
             solution.setText(answer);
+            history.add(answer);
+
         });
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return scalar;
+    }
+
+    public BorderPane matrixPage(BorderPane view) {
+        BorderPane matrixPro = new BorderPane();
+        Button main = new Button("Back to Main");
+        VBox content = new VBox();
+        content.getChildren().add(main);
+        matrixPro.setCenter(content);
+
+        main.setOnAction((event) -> view.setCenter(frontPage(view)));
+
+        return matrixPro;
+    }
+
+    public BorderPane historyPage(BorderPane view) {
+        BorderPane historyPane = new BorderPane();
+        Button showHistory = new Button("Show History");
+        Label hist = new Label("");
+        VBox content = new VBox();
+        Button main = new Button("Back to Main");
+        content.getChildren().add(showHistory);
+        content.getChildren().add(hist);
+        content.getChildren().add(main);
+        historyPane.setCenter(content);
+
+        main.setOnAction((event) -> view.setCenter(frontPage(view)));
+        showHistory.setOnAction((event) -> {
+            String answer = history.list().toString();
+            hist.setText(answer);
+        });
+
+        return historyPane;
     }
 
 }
