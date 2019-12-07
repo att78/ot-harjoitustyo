@@ -30,7 +30,7 @@ public class Matrix {
 //            }
 //        }
 //        if (min == max) {
-            this.matrix = matrix;
+        this.matrix = matrix;
 //        } else {
 //            ArrayList<Double> zero = new ArrayList();
 //            zero.add(0.0);
