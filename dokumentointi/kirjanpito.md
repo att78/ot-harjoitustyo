@@ -14,8 +14,10 @@
 | 28.11   | 2       | Vektorin pituus+skalaaritulon ui  
 | 30.11   | 3       | Pistetulo toimii, jar-paketti-harjoittelua
 | 3.12    | 5       | Testausta, sekvenssikaaviota, dokumentoinnin ajalle saattoa.Release yms sekalaista
+| 6.12    | 2       | Matriisien testejä
+| 7.12    | 1       | Matriisien testejä lisää
 |                   |
-| Yhteensä  34h     |
+| Yhteensä  37h     |
 
 
 
