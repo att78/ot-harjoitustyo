@@ -22,7 +22,7 @@ import java.util.List;
 public class History {
 
     Connection connection;
-    public ArrayList<String> operations;
+   
 
     public History() throws Exception {
         connection = DriverManager.getConnection("jdbc:h2:./calculator.db");

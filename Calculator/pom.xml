@@ -51,7 +51,7 @@
                 <configuration>
                     <excludes>
                         <exclude>calculator/ui/*</exclude>
-                        <exclude>calculator/CalculatorApplication</exclude>
+                        <exclude>calculator/CalculatorApplication*</exclude>
                     </excludes>
                 </configuration>   
                 <executions>
