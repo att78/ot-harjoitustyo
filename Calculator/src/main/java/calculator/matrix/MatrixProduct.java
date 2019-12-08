@@ -16,9 +16,9 @@ import java.util.ArrayList;
  */
 public class MatrixProduct {
 
-    Matrix matrixA;
-    Matrix matrixB;
-    ArrayList<Vector> results = new ArrayList();
+    private Matrix matrixA;
+    private Matrix matrixB;
+    private ArrayList<Vector> results = new ArrayList();
 
     //matrix B should be changed columns to rows in order to make effective calculations
     //   

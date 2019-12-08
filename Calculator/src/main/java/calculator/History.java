@@ -22,7 +22,6 @@ import java.util.List;
 public class History {
 
     Connection connection;
-   
 
     public History() throws Exception {
         connection = DriverManager.getConnection("jdbc:h2:./calculator.db");
@@ -45,7 +44,6 @@ public class History {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     public List<String> list() {
@@ -60,7 +58,6 @@ public class History {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-
         return results;
     }
 

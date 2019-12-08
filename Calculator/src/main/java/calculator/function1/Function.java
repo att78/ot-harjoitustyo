@@ -11,7 +11,6 @@ package calculator.function1;
  */
 public class Function {
 
-    String name;
     double y;
     double x;
     double c;
@@ -22,14 +21,6 @@ public class Function {
         this.x = x;
         this.c = c;
 
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double solveXatYAxis() {
