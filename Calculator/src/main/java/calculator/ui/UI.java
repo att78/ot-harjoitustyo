@@ -23,6 +23,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class UI extends Application {
@@ -182,7 +183,7 @@ public class UI extends Application {
         Button main = new Button("Back to Main");
         content.getChildren().add(showHistory);
         content.getChildren().add(hist);
-      
+
         historyPane.setCenter(content);
         historyPane.setBottom(main);
 
@@ -190,6 +191,7 @@ public class UI extends Application {
         showHistory.setOnAction((event) -> {
             String answer = history.list().toString();
             hist.setText(answer);
+            
         });
 
         return historyPane;
