@@ -11,13 +11,14 @@
 | 23.11   | 5       | JavaFX:n ja Checkstylen käyttöönotto, graafisen UI:n rakentelu
 | 24.11   | 4       | graafista UI:ta, skalaaritulon korjailua+JUnitin tekoa. "Jotain toimivaa". Koodin siistimistä.
 | 25.11   | 2       | Koodin siistimistä, loogista validointia, raportoinnin päivittämistä.
-| 28.11   | 2       | Vektorin pituus+skalaaritulon ui  
+| 28.11   | 2       | Vektorin pituus+skalaaritulon ui   
 | 30.11   | 3       | Pistetulo toimii, jar-paketti-harjoittelua
 | 3.12    | 5       | Testausta, sekvenssikaaviota, dokumentoinnin ajalle saattoa.Release yms sekalaista
 | 6.12    | 2       | Matriisien testejä
-| 7.12    | 4       | Matriisien testejä lisää+tietokanta 
+| 7.12    | 6       | Matriisien testejä lisää+tietokanta, siistimistä 
+| 8.12    | 2       | Matriisitulon testausta
 |                   |
-| Yhteensä  40h     |
+| Yhteensä  44h     |
 
 
 
