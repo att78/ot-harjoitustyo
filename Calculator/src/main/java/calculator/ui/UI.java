@@ -182,8 +182,9 @@ public class UI extends Application {
         Button main = new Button("Back to Main");
         content.getChildren().add(showHistory);
         content.getChildren().add(hist);
-        content.getChildren().add(main);
+      
         historyPane.setCenter(content);
+        historyPane.setBottom(main);
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         showHistory.setOnAction((event) -> {
