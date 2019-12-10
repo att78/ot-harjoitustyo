@@ -1,12 +1,25 @@
-Alustava arkkitehtuuri-rakenne:
+# Alustava arkkitehtuurin kuvaus
 
-CalculatorApplication-pakkausrakenne
+Tässä on alustava kuvaus CalculationApplication-funktiolaskimesta.
+
+## CalculatorApplication-pakkausrakenne
 
 Pakkausrakenne noudattaa alla olevaa arkkitehtuurikuvausta. CalculatorApplicatioinin main-luokka on pääpakkauksessa yhdessä tietokantaa hallinnoivan History-luokan kanssa. UI-luokka käyttää eri laskutoimitusten luokkia aina tarpeen mukaan.
 
 ![Pakkauskaario](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Pakkauskaavio%20vko6.png)
 
 
+## Käyttöliittymä
 
+Käyttöliittymä sisältää main-näkymän, josta pääsee laskutoimituksiin ja laskutoimistusten historiaan. Jokaiselle laskutoimitukselle on oma näkymä, jossa voi syöttää lähtöarvot ja katsella tulosta. Historia-näkymässä näkee lähtöarvot ja laskutuloksen. Yhteensä näkymiä on tällä hetkellä 5.
+
+## Sovelluslogiikka
+
+Oheinen sekvenssikaavio antaa esimerkin sovelluslogiikasta skalaaritulon osalta.
 
 ![Sekvenssikaavio skalaaritulosta](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Sekvenssikaavio%20skalaaritulosta%20(1).png)
+
+
+## Tietojen pysyväistallennus
+
+Tiedot luetaan ja haetaan tietokannasta History-luokan avulla.
