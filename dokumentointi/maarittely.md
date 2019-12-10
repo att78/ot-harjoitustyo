@@ -13,14 +13,9 @@ Visuaalisesti on aloitusruutu, jolla on valikko. Valikosta mennään haluttuun t
 
 ### Toiminnallisuudet:
 1. asteen funktion ratkaisu y-akselin ja x-akselin suhteen on toteutettu. TEHTY
-
 Vektoritulo on toteutettu. TEHTY
-
-Vektoritulo tulee auttamaan myös matriisitulon laskennassa, mikä vielä on kesken.
-viimeaikaisten laskujen historiatietokantaa ei ole vielä toteutettu.
-
-Mahdollisia ongelmakohtia: 
-Ratkeamattomien yhtälöiden käsittely
+Laskutoimitusten historiatietokanta. TEHTY
+Matriisitulo KESKEN
 
 
 ### Jatkokehitysideoita
