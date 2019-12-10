@@ -17,6 +17,9 @@ Alustava vaatimusmäärittely:
 Alustava kuva arkkitehtuurin rungosta:
 [Linkki arkkitehtuuri.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
+Manuaali:
+[Linkki manuaaliin](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/manuaali.md)
+
 
 ## RELEASES
 1. Release:
@@ -45,3 +48,8 @@ Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
  mvn jxr:jxr checkstyle:checkstyle
 
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
+
+
+### JavaDoc
+Javadocin saa generoitua seuraavalla komennolla:
+mvn javadoc:javadoc
