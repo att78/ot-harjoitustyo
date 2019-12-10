@@ -25,6 +25,9 @@ Manuaali:
 1. Release:
 [Linkki 1. versioon](https://github.com/att78/ot-harjoitustyo/releases/tag/viikko5)
 
+2. Release:
+[Linkki 2. versioon](https://github.com/att78/ot-harjoitustyo/releases/tag/viikko6)
+
 
 ## KOMENTORIVITOIMINNOT
 
