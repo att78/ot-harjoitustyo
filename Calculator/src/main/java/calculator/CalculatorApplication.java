@@ -8,11 +8,18 @@ package calculator;
 import calculator.ui.UI;
 
 /**
+ * CalculatorApplication on koko sovelluksen käynnistävä luokka
  *
  * @author tallbera
  */
 public class CalculatorApplication {
 
+    /**
+     * Sovellus käynnistyy main metodin alla olevalla kutsulla
+     * UI.launch(UI.class)
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         UI.launch(UI.class);

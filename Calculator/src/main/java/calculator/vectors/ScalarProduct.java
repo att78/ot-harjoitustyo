@@ -6,16 +6,22 @@
 package calculator.vectors;
 
 /**
+ * Luokka laskee kahden vektorin skalaaritulon
  *
  * @author tallbera
  */
 public class ScalarProduct {
 
     private double scaProduct;
-    Vector a;
-    Vector b;
+    private Vector a;
+    private Vector b;
 
     //vector size must be checked either before constructor or in constructor
+    /**
+     * Muodostaa skalaaritulon kahdesta käyttäjän antamasta vektorista 
+     * @param a Käyttäjän antama vektori
+     * @param b Käyttäjän antama vektori
+     */
     public ScalarProduct(Vector a, Vector b) {
         if (a.getValues().size() == b.getValues().size()) {
             this.a = a;
@@ -23,6 +29,9 @@ public class ScalarProduct {
         }
     }
 
+    /**
+     * laskee skalaaritulon
+     */
     public void scalarProduct() {
 
         for (int i = 0; i < a.getValues().size(); i++) {
@@ -31,6 +40,10 @@ public class ScalarProduct {
         }
     }
 
+    /**
+     * palauttaa lasketun skalaaritulon
+     * @return palauttaa skalaaritulon
+     */
     public double getScaProduct() {
         return scaProduct;
     }
@@ -43,10 +56,13 @@ public class ScalarProduct {
         return b;
     }
 
+    /**
+     * Palauttaa näytettävän vastauksen
+     * @return palauttaa näytettävän vastauksen
+     */
     public String toString() {
         String answer = "ScalarProduct of " + this.a.toString() + " and " + this.b.toString() + " is " + scaProduct;
         return answer;
     }
-    
 
 }

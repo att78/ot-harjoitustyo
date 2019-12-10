@@ -8,8 +8,10 @@ package calculator.vectors;
 import java.util.ArrayList;
 
 /**
+ * Käyttäjän syöttämä vektori
  *
  * @author tallbera
+ *
  */
 public class Vector {
 
@@ -21,6 +23,9 @@ public class Vector {
 
     }
 
+    /**
+     * @param numbers Käyttäjän antama syöte
+     */
     public Vector(String numbers) {
         ArrayList<Double> listOfNumbers = new ArrayList();
         String[] givenNumbers = numbers.split(",");
@@ -40,6 +45,10 @@ public class Vector {
     }
 
     // vector length could be calculated with scalarproduct
+    /**
+     *
+     * @return vektorin pituus eli skalaaritulo vektori itsellään kerrottuna
+     */
     public double vectorLength() {
         Vector v = new Vector(this.values);
         ScalarProduct length = new ScalarProduct(v, v);
@@ -49,6 +58,12 @@ public class Vector {
         return result;
     }
 
+    // vektorin tostring
+    /**
+     *
+     * @return palauttaa vektorin arvot. Metodia käytetään skalaaritulon
+     * vastauksessa ja vektorien tallentamisessa History-tietokantaan
+     */
     public String toString() {
 
         String answer = this.values.toString();

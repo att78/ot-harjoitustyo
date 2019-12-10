@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Tietokantaluokka, joka tallettaa laskutoimitukset tietokantaan ja hakee ne
+ * sieltä History-näkymään.
  *
  * @author tallbera
  */
@@ -23,6 +25,11 @@ public class History {
 
     Connection connection;
 
+    /**
+     * History tietokannan konstruktori. Perustaa yhteyden tietokantaan ohjelman
+     * käynnistyessä.
+     *
+     */
     public History() throws Exception {
         connection = DriverManager.getConnection("jdbc:h2:./calculator.db");
         String query = "CREATE TABLE IF NOT EXISTS operations (result varchar NOT NULL, created timestamp) ;"; //table beginning
@@ -34,6 +41,10 @@ public class History {
     }
 
     //add and list operations
+    /**
+     *
+     * @param string Lisää tietokantaan käyttäjän tekemän laskutoimituksen
+     */
     public void add(String string) {
         String query = "INSERT INTO operations (result, created) VALUES (?, ?);";
         try (Statement stmt = connection.createStatement()) {
@@ -46,6 +57,10 @@ public class History {
         }
     }
 
+    /**
+     *
+     * @return palauttaa tietokannasta haetun listan laskutoimituksia
+     */
     public List<String> list() {
         ArrayList<String> results = new ArrayList();
         String getResults = "SELECT result, created FROM operations ORDER BY created DESC;";
@@ -60,5 +75,6 @@ public class History {
         }
         return results;
     }
+    // should I have method that allows showing only last 5 calculations?
 
 }

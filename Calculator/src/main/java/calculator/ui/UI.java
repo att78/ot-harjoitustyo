@@ -6,6 +6,7 @@
 package calculator.ui;
 
 /**
+ * Graafisen käyttöliittymän rakentava luokka
  *
  * @author tallbera
  */
@@ -30,6 +31,12 @@ public class UI extends Application {
 
     History history;
 
+    /**
+     * Graafisen käyttöliittymän käynnistävä metodi
+     *
+     * @param window on Stage tyypin-olio joka toimii sovelluksen elementtien
+     * kontrolloijana
+     */
     @Override
     public void start(Stage window) {
         try {
@@ -49,6 +56,12 @@ public class UI extends Application {
 
     }
 
+    /**
+     * Etusivun rakentava ja muihin osiin linkittävä metodi
+     *
+     * @param view BorderPane-olio, joka annetaan metodille parametriksi
+     * @return Palauttaa etusivun rakentavan BorderPane-olion.
+     */
     public BorderPane frontPage(BorderPane view) {
         Button function1 = new Button("Simple Function");
         Button scalarPro = new Button("ScalarProduct");
@@ -72,6 +85,12 @@ public class UI extends Application {
         return viewMain;
     }
 
+    /**
+     * metodi huolehtii funktio-sivusta
+     *
+     * @param view metodille parametrina annettava BorderPane-olio
+     * @return palauttaa funktionlaskentasivun rakentavan BorderPane-olion
+     */
     public BorderPane functionPage(BorderPane view) {
 
         BorderPane viewFunction = new BorderPane();
@@ -125,6 +144,12 @@ public class UI extends Application {
         return viewFunction;
     }
 
+    /**
+     * metodi huolehtii skalaaritulon rakentavasta sivusta
+     *
+     * @param view metodin sisäänottama BorderPane-olio
+     * @return palauttaa skalaaritulolle tarkoitetun BorderPane-olion
+     */
     public BorderPane scalarPage(BorderPane view) {
         BorderPane scalar = new BorderPane();
         scalar.setPrefSize(400, 400);
@@ -164,6 +189,12 @@ public class UI extends Application {
         return scalar;
     }
 
+    /**
+     * matriisitulon UIssa käsittelevä metodi
+     *
+     * @param view metodin sisäänottama BorderPane-olio
+     * @return palautta matriisitulo-näkymän rakentavan BorderPane-olion
+     */
     public BorderPane matrixPage(BorderPane view) {
         BorderPane matrixPro = new BorderPane();
         Button main = new Button("Back to Main");
@@ -176,6 +207,13 @@ public class UI extends Application {
         return matrixPro;
     }
 
+    /**
+     * Metodi hakee tietokannasta historiatiedot history-olion avulla ja näyttää
+     * tiedot.
+     *
+     * @param view metodin sisäänottama BorderPane-olio
+     * @return palauttaa historiikin
+     */
     public BorderPane historyPage(BorderPane view) {
         BorderPane historyPane = new BorderPane();
         Button showHistory = new Button("Show History");

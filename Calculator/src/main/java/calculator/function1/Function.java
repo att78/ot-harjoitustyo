@@ -6,18 +6,24 @@
 package calculator.function1;
 
 /**
+ * Luokka laskee 1. asteen funktion leikkauskohdat y- ja x- akselin suhteen.
  *
  * @author tallbera
- * Luokka laskee 1. asteen funktion leikkauskohdat y- ja x- akselin suhteen.
- * 
+ *
  */
 public class Function {
 
-    double y;
-    double x;
-    double c;
+    private double y;
+    private double x;
+    private double c;
 
     // both y and x should not be allowed to be zero
+    /**
+     *
+     * @param y Käyttäjän antama syöte
+     * @param x Käyttäjän antama syöte
+     * @param c Käyttäjän antama syöte
+     */
     public Function(double y, double x, double c) {
         this.y = y;
         this.x = x;
@@ -25,6 +31,12 @@ public class Function {
 
     }
 
+    /**
+     *
+     *
+     * yhtälön arvon ratkaiseminen y-akselin leikkauskohdassa
+     *
+     */
     public double solveXatYAxis() {
 
         double multiplier;
@@ -46,6 +58,9 @@ public class Function {
         return result;
     }
 
+    /**
+     * Yhtälön arvon ratkaiseminen x-akselin leikkauskohdassa
+     */
     public double solveYatXAxis() {
         double multiplier;
 
@@ -65,6 +80,11 @@ public class Function {
         return result;
     }
 
+    /**
+     *
+     * @return palauttaa käyttäjälle functionpage:ssa vastauksena näytettävän
+     * tuloksen
+     */
     public String toString() {
 
         double solve1 = solveXatYAxis();
@@ -75,6 +95,10 @@ public class Function {
         return answer;
     }
 
+    /**
+     *
+     * @return palauttaa History-tietokantataan talletettavat tiedot
+     */
     public String toHistory() {
 
         String history = "Y value is " + y + " X value is " + x + " and C value is " + c;
