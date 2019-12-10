@@ -73,4 +73,13 @@ public class Function {
         return answer;
     }
 
+    public String toHistory() {
+
+        String history = "Y value is " + y + " X value is " + x + " and C value is " + c;
+        String answer = toString();
+        String total = history + "\n" + answer + "\n";
+
+        return total;
+    }
+
 }

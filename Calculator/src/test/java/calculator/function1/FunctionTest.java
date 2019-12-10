@@ -90,4 +90,14 @@ public class FunctionTest {
 
     }
 
+    @Test
+    public void toHistoryTest() {
+        Function function = new Function(1, 1, 0);
+        double resultX = function.solveXatYAxis();
+        double resultY = function.solveYatXAxis();
+
+        assertEquals(function.toHistory(), "Y value is " + 1.0 + " X value is " + 1.0 + " and C value is " + 0.0 + "\n" + function.toString() + "\n");
+
+    }
+
 }

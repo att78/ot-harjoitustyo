@@ -111,7 +111,8 @@ public class UI extends Application {
             Function f = new Function(givenY, givenX, givenC);
             String answer = f.toString();
             solution.setText(answer);
-            history.add(answer);
+            String toHistory = f.toHistory();
+            history.add(toHistory);
         });
 
         functionInput.setSpacing(10);
