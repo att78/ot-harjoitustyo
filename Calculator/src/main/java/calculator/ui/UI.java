@@ -189,9 +189,14 @@ public class UI extends Application {
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         showHistory.setOnAction((event) -> {
-            String answer = history.list().toString();
+
+            String answer = "";
+            for (int i = 0; i < history.list().size(); i++) {
+                answer += history.list().get(i) + "\n";
+            }
+
             hist.setText(answer);
-            
+
         });
 
         return historyPane;
