@@ -13,8 +13,11 @@ Visuaalisesti on aloitusruutu, jolla on valikko. Valikosta mennään haluttuun t
 
 ### Toiminnallisuudet:
 1. asteen funktion ratkaisu y-akselin ja x-akselin suhteen on toteutettu. TEHTY
+
 Vektoritulo on toteutettu. TEHTY
+
 Laskutoimitusten historiatietokanta. TEHTY
+
 Matriisitulo KESKEN
 
 
