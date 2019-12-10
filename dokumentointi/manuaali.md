@@ -14,3 +14,11 @@ Painamalla Simple Function pääsee laskeman suoran leikkauspisteet x-akselin ja
 Painamalla ScalarProduct pääsee laskemaan kahden vektorin pistetulon. Vektorit annetaan muodossa 1,2,3 eli numerot erotellaan pilkuilla. Piste kuvastaa desimaalimerkkiä.
 
 [Skalaaritulo](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Skalaaritulo.png)
+
+
+## Historia
+
+Viimeisimpien laskujen historia menemällä historia näkymään ja yläreunassa olevaa nappia.
+
+
+Kaikista näkymistä pääsee takaisin main-valikkoon painamalla "Back to Main"-nappia.
