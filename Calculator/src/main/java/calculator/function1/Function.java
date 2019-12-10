@@ -8,6 +8,8 @@ package calculator.function1;
 /**
  *
  * @author tallbera
+ * Luokka laskee 1. asteen funktion leikkauskohdat y- ja x- akselin suhteen.
+ * 
  */
 public class Function {
 
