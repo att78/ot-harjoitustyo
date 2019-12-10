@@ -4,7 +4,7 @@ Calculator-1.1 käynnistyy, kun ladatun jar-tiedoston properties "allow executin
 
 Ensimmäisenä funktiolaskimessa pääsee päävalikkoon, jossa on vaihtoehtoina yksinkertainen funktio, vektorien pistetulo, matriisitulo ja historia.
 
-[MainValikko](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Mainvalikko.png)
+![MainValikko](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Mainvalikko.png)
 
 
 ## Skalaaritulo
@@ -13,4 +13,4 @@ Painamalla Simple Function pääsee laskeman suoran leikkauspisteet x-akselin ja
 
 Painamalla ScalarProduct pääsee laskemaan kahden vektorin pistetulon. Vektorit annetaan muodossa 1,2,3 eli numerot erotellaan pilkuilla. Piste kuvastaa desimaalimerkkiä.
 
-[Skalaaritulo](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Skalaaritulo.png)
+![Skalaaritulo](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/Skalaaritulo.png)
