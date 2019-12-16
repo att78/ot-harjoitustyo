@@ -18,10 +18,13 @@ public class CalculatorApplication {
      * Sovellus käynnistyy main metodin alla olevalla kutsulla
      * UI.launch(UI.class)
      *
-     * @param args
+     * @param args main-metodin, jonka sisällä käynnistävä metodi, parametri
      */
     public static void main(String[] args) {
 
+        /**
+         * Sovelluksen käynnistävä metodi
+         */
         UI.launch(UI.class);
 
     }

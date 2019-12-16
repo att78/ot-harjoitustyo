@@ -42,8 +42,8 @@ public class History {
 
     //add and list operations
     /**
-     *
-     * @param string Lisää tietokantaan käyttäjän tekemän laskutoimituksen
+     *metodilla lisätään tietokantaan laskutoimitus
+     * @param string Tietokantaan lisättävä laskutoimitus String-muotoisena
      */
     public void add(String string) {
         String query = "INSERT INTO operations (result, created) VALUES (?, ?);";
@@ -58,7 +58,7 @@ public class History {
     }
 
     /**
-     *
+     * metodilla listataan tietokannassa olevat laskutoimitukset
      * @return palauttaa tietokannasta haetun listan laskutoimituksia
      */
     public List<String> list() {

@@ -12,6 +12,7 @@ package calculator.ui;
  */
 import calculator.History;
 import calculator.function1.Function;
+import calculator.matrix.Matrix;
 import calculator.vectors.ScalarProduct;
 import calculator.vectors.Vector;
 import java.util.logging.Level;
@@ -30,6 +31,8 @@ import javafx.stage.Stage;
 public class UI extends Application {
 
     History history;
+    Matrix A;
+    Matrix B;
 
     /**
      * Graafisen käyttöliittymän käynnistävä metodi
@@ -64,9 +67,13 @@ public class UI extends Application {
      */
     public BorderPane frontPage(BorderPane view) {
         Button function1 = new Button("Simple Function");
+        function1.setPrefWidth(175);
         Button scalarPro = new Button("ScalarProduct");
+        scalarPro.setPrefWidth(175);
         Button matrixPro = new Button("MatrixProduct");
+        matrixPro.setPrefWidth(175);
         Button history = new Button("History");
+        history.setPrefWidth(175);
         VBox list = new VBox();
         BorderPane viewMain = new BorderPane();
         list.getChildren().add(new Label("List of operations:"));
@@ -196,12 +203,43 @@ public class UI extends Application {
      * @return palautta matriisitulo-näkymän rakentavan BorderPane-olion
      */
     public BorderPane matrixPage(BorderPane view) {
+
         BorderPane matrixPro = new BorderPane();
+        Label info = new Label("Matrixes are given as vectors");
+        Label firstMatrix = new Label("Rows for first Matrix");
+        Label secondMatrix = new Label("Columns for second Matrix");
+        TextField vector1 = new TextField();
+        vector1.setMaxWidth(175);
+        vector1.textProperty().addListener(new VectorListener(vector1));
+
+        TextField vector2 = new TextField();
+        vector2.setMaxWidth(175);
+        vector2.textProperty().addListener(new VectorListener(vector2));
+
         Button main = new Button("Back to Main");
         VBox content = new VBox();
-        content.getChildren().add(main);
-        matrixPro.setCenter(content);
+        HBox inputLabels = new HBox();
+        HBox inputText = new HBox();
+        inputLabels.getChildren().add(firstMatrix);
+        inputLabels.getChildren().add(new Label("  "));
+        inputLabels.getChildren().add(secondMatrix);
+        inputText.getChildren().add(vector1);
+        inputText.getChildren().add(new Label("  "));
+        inputText.getChildren().add(vector2);
+        HBox addVectors = new HBox();
+        Button addNew = new Button("Add another rowvector");
+        Button addNew2 = new Button("Add another columnvector");
+        addVectors.getChildren().add(addNew);
+        addVectors.getChildren().add(new Label("  "));
+        addVectors.getChildren().add(addNew2);
 
+        content.getChildren().add(info);
+        content.getChildren().add(inputLabels);
+        content.getChildren().add(inputText);
+        content.getChildren().add(addVectors);
+
+        matrixPro.setCenter(content);
+        matrixPro.setBottom(main);
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
 
         return matrixPro;

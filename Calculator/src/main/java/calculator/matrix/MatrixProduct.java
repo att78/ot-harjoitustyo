@@ -11,7 +11,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 
 /**
- *
+ * Matriisitulo lasketaan tässä luokassa
  * @author tallbera
  */
 public class MatrixProduct {
@@ -22,13 +22,28 @@ public class MatrixProduct {
 
     //matrix B should be changed columns to rows in order to make effective calculations
     //   
-    // uups. Gotta think, what to do next
+    /**
+     * Matriisitulon konstruktori     * 
+     * @param matrixA Käyttäjän syötteestä muodostettu matriisi
+     * @param matrixB Käyttäjän syötteestä muodostettu matriisi
+     */
     public MatrixProduct(Matrix matrixA, Matrix matrixB) {
-        this.matrixA = matrixA;
-        this.matrixB = matrixB;
+
+        Vector firstA = matrixA.getMatrix().get(0);
+        Vector firstB = matrixB.getMatrix().get(0);
+
+        if (firstA.getValues().size() == firstB.getValues().size()) {
+            this.matrixA = matrixA;
+            this.matrixB = matrixB;
+        }
 
     }
+    
 
+    /**
+     * Laskee annetuista matriiseista matriisitulon 
+     * @return palauttaa tulokset ArrayListinä
+     */
     public ArrayList<Vector> calculateMatrixProduct() {
 
         for (int i = 0; i < matrixA.getMatrix().size(); i++) {
@@ -49,6 +64,10 @@ public class MatrixProduct {
 
     }
 
+    /**
+     * Muodostaa String-muotoisen lauseen matriisitulon tuloksista
+     * @return String-muotoisen lauseen
+     */
     public String toString() {
 
         Matrix answer = new Matrix(results);

@@ -17,13 +17,18 @@ public class Vector {
 
     private ArrayList<Double> values;
 
-    //numbers are given before list 
+    //numbers are given before list
+    /**
+     * Testauksessa käytetty konstruktori
+     * @param values Vektorin arvot suoraan annettuna testauksessa
+     */
     public Vector(ArrayList<Double> values) {
         this.values = values;
 
     }
 
     /**
+     * Konstrukoti, joka toimii käyttäjän syötteen pohjalta.
      * @param numbers Käyttäjän antama syöte
      */
     public Vector(String numbers) {
