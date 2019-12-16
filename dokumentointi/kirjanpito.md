@@ -18,8 +18,10 @@
 | 7.12    | 6       | Matriisien testejä lisää+tietokanta, siistimistä 
 | 8.12    | 2       | Matriisitulon testausta
 | 10.12   | 10      | Ongelmien selvittelyä javadocin osalta. Testaus edennyt. Dokumentteja kuntoon. 
+| 13.12   | 3       | UI:ta matriisitulolle 
+| 16.12   | 2       | Javadoceja kuntoon
 |                   |
-| Yhteensä  54h     |
+| Yhteensä  59h     |
 
 
 
