@@ -16,7 +16,8 @@ import javafx.scene.control.TextField;
 public class VectorListener extends NumberListener {
 
     /**
-     *Valvoo käyttäjän kirjaamaa syötettä
+     * Valvoo käyttäjän kirjaamaa syötettä
+     *
      * @param textField Käyttäjän kirjaama syöte
      */
     public VectorListener(TextField textField) {

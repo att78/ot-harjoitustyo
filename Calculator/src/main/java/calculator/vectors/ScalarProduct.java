@@ -18,7 +18,8 @@ public class ScalarProduct {
 
     //vector size must be checked either before constructor or in constructor
     /**
-     * Muodostaa skalaaritulon kahdesta käyttäjän antamasta vektorista 
+     * Muodostaa skalaaritulon kahdesta käyttäjän antamasta vektorista
+     *
      * @param a Käyttäjän antama vektori
      * @param b Käyttäjän antama vektori
      */
@@ -42,6 +43,7 @@ public class ScalarProduct {
 
     /**
      * palauttaa lasketun skalaaritulon
+     *
      * @return palauttaa skalaaritulon
      */
     public double getScaProduct() {
@@ -58,6 +60,7 @@ public class ScalarProduct {
 
     /**
      * Palauttaa näytettävän vastauksen
+     *
      * @return palauttaa näytettävän vastauksen
      */
     public String toString() {

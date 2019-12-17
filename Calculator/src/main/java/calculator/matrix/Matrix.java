@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 /**
  * Tämä luokkaa muodostaa matriisitulossa käytettävän matriisin
+ *
  * @author tallbera
  */
 public class Matrix {
@@ -27,6 +28,7 @@ public class Matrix {
     //every vector on the list must be same length and it should be checked
     /**
      * Testauksessa käytetty konstruktori
+     *
      * @param matrix valmis lista vektoreita
      */
     public Matrix(ArrayList<Vector> matrix) {
@@ -36,18 +38,19 @@ public class Matrix {
     }
 
     /**
-     * Tämä metodi palauttaa matriisin vektorit listana 
+     * Tämä metodi palauttaa matriisin vektorit listana
+     *
      * @return Arraylistin, joka sisältää vektorit
      */
     public ArrayList<Vector> getMatrix() {
         return matrix;
     }
-    
+
     /**
      * Tämä metodi lisää matriisiin vektorin
+     *
      * @param v Käyttäjän syötteestä muodostettu vektori
      */
-
     public void addVector(Vector v) {
         //if same length
         if (matrix.isEmpty()) {
@@ -59,8 +62,10 @@ public class Matrix {
     }
 
     /**
-     * Metodi muodostaa matriisia kuvaavan Stringin käymällä vektorit läpi ja lisäämällä vielä loppuun yhden rivivaihdon
-     * @return 
+     * Metodi muodostaa matriisia kuvaavan Stringin käymällä vektorit läpi ja
+     * lisäämällä vielä loppuun yhden rivivaihdon
+     *
+     * @return
      */
     public String toString() {
 

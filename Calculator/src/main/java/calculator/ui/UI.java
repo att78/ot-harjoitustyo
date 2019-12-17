@@ -13,8 +13,10 @@ package calculator.ui;
 import calculator.History;
 import calculator.function1.Function;
 import calculator.matrix.Matrix;
+import calculator.matrix.MatrixProduct;
 import calculator.vectors.ScalarProduct;
 import calculator.vectors.Vector;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -31,8 +33,6 @@ import javafx.stage.Stage;
 public class UI extends Application {
 
     History history;
-    Matrix A;
-    Matrix B;
 
     /**
      * Graafisen käyttöliittymän käynnistävä metodi
@@ -204,10 +204,13 @@ public class UI extends Application {
      */
     public BorderPane matrixPage(BorderPane view) {
 
+        ArrayList<Vector> rowVectors = new ArrayList();
+        ArrayList<Vector> columnVectors = new ArrayList();
+
         BorderPane matrixPro = new BorderPane();
         Label info = new Label("Matrixes are given as vectors");
         Label firstMatrix = new Label("Rows for first Matrix");
-        Label secondMatrix = new Label("Columns for second Matrix");
+        Label secondMatrix = new Label("          Columns for second Matrix");
         TextField vector1 = new TextField();
         vector1.setMaxWidth(175);
         vector1.textProperty().addListener(new VectorListener(vector1));
@@ -233,14 +236,55 @@ public class UI extends Application {
         addVectors.getChildren().add(new Label("  "));
         addVectors.getChildren().add(addNew2);
 
+        Label inputLeft = new Label("beep");
+        Label inputRight = new Label("beep");
+        HBox inputs = new HBox();
+        inputs.getChildren().add(inputLeft);
+        inputs.getChildren().add(new Label("                                    "));
+        inputs.getChildren().add(inputRight);
+        Button result = new Button("Calculate matrixproduct");
+        Label showResult = new Label("beep");
+
         content.getChildren().add(info);
         content.getChildren().add(inputLabels);
         content.getChildren().add(inputText);
         content.getChildren().add(addVectors);
+        content.getChildren().add(inputs);
+        content.getChildren().add(result);
+        content.getChildren().add(showResult);
 
         matrixPro.setCenter(content);
         matrixPro.setBottom(main);
+
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
+        addNew.setOnAction((event)->{
+            Vector v = new Vector(vector1.getText());
+            rowVectors.add(v);
+            Matrix m = new Matrix(rowVectors);
+            String input = m.toString();
+            inputLeft.setText(input);
+        });
+       addNew2.setOnAction((event)->{
+            Vector v = new Vector(vector2.getText());
+            columnVectors.add(v);
+            Matrix m = new Matrix(columnVectors);
+            String input= m.toString();
+            inputRight.setText(input);
+        });
+       result.setOnAction((event)->{
+           Matrix rows = new Matrix(rowVectors);
+           Matrix columns = new Matrix(columnVectors);
+           MatrixProduct mp = new MatrixProduct(rows,columns);
+           ArrayList<Vector> calculated= mp.calculateMatrixProduct();
+           Matrix endResult = new Matrix(calculated);
+           String answer = endResult.toString();
+           history.add(answer);
+           showResult.setText(answer);
+           
+           rowVectors.clear();
+           columnVectors.clear();
+       });
+        
 
         return matrixPro;
     }

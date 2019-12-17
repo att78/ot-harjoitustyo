@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 /**
  * Matriisitulo lasketaan tässä luokassa
+ *
  * @author tallbera
  */
 public class MatrixProduct {
@@ -23,7 +24,9 @@ public class MatrixProduct {
     //matrix B should be changed columns to rows in order to make effective calculations
     //   
     /**
-     * Matriisitulon konstruktori     * 
+     * Matriisitulon konstruktori
+     *
+     *
      * @param matrixA Käyttäjän syötteestä muodostettu matriisi
      * @param matrixB Käyttäjän syötteestä muodostettu matriisi
      */
@@ -38,10 +41,10 @@ public class MatrixProduct {
         }
 
     }
-    
 
     /**
-     * Laskee annetuista matriiseista matriisitulon 
+     * Laskee annetuista matriiseista matriisitulon
+     *
      * @return palauttaa tulokset ArrayListinä
      */
     public ArrayList<Vector> calculateMatrixProduct() {
@@ -66,6 +69,7 @@ public class MatrixProduct {
 
     /**
      * Muodostaa String-muotoisen lauseen matriisitulon tuloksista
+     *
      * @return String-muotoisen lauseen
      */
     public String toString() {

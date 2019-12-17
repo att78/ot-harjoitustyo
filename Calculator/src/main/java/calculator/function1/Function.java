@@ -20,6 +20,7 @@ public class Function {
     // both y and x should not be allowed to be zero
     /**
      * Konstruktori ottaa sisäänsä käyttäjän syötteen
+     *
      * @param y Käyttäjän antama syöte
      * @param x Käyttäjän antama syöte
      * @param c Käyttäjän antama syöte
@@ -81,7 +82,9 @@ public class Function {
     }
 
     /**
-     * Yhtälön toString-metodi antaa vastauksen käyttäjän antamilla arvoilla. Vastaus näytetään tässä muodossa.
+     * Yhtälön toString-metodi antaa vastauksen käyttäjän antamilla arvoilla.
+     * Vastaus näytetään tässä muodossa.
+     *
      * @return palauttaa käyttäjälle functionpage:ssa vastauksena näytettävän
      * tuloksen
      */
@@ -97,6 +100,7 @@ public class Function {
 
     /**
      * Tietokantaan tallennattavan tiedon muodostaa tämä metodi
+     *
      * @return palauttaa History-tietokantataan talletettavat tiedot
      */
     public String toHistory() {

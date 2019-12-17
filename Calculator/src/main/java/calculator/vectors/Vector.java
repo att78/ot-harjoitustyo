@@ -20,6 +20,7 @@ public class Vector {
     //numbers are given before list
     /**
      * Testauksessa käytetty konstruktori
+     *
      * @param values Vektorin arvot suoraan annettuna testauksessa
      */
     public Vector(ArrayList<Double> values) {
@@ -29,6 +30,7 @@ public class Vector {
 
     /**
      * Konstrukoti, joka toimii käyttäjän syötteen pohjalta.
+     *
      * @param numbers Käyttäjän antama syöte
      */
     public Vector(String numbers) {

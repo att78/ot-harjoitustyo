@@ -20,6 +20,7 @@ public class NumberListener implements ChangeListener<String> {
 
     /**
      * Listenerin konstruktori
+     *
      * @param textField metodi saa parametrina käyttäjän tekstikenttään
      * kirjoittaman syötteen
      */
