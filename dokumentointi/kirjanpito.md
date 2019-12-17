@@ -19,9 +19,10 @@
 | 8.12    | 2       | Matriisitulon testausta
 | 10.12   | 10      | Ongelmien selvittelyä javadocin osalta. Testaus edennyt. Dokumentteja kuntoon. 
 | 13.12   | 3       | UI:ta matriisitulolle 
-| 16.12   | 1       | Javadoceja kuntoon
+| 16.12   | 2       | Javadoceja kuntoon
+| 17.12   | 2       | Matriisitulo toimii+Nullpointer ihmettelyä  
 |                   |
-| Yhteensä  58h     |
+| Yhteensä  61h     |
 
 
 
