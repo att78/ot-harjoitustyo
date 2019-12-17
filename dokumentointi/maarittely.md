@@ -18,15 +18,8 @@ Vektoritulo on toteutettu. TEHTY
 
 Laskutoimitusten historiatietokanta. TEHTY
 
-Matriisitulo KESKEN
+Matriisitulo TEHTY
 
 
-### Jatkokehitysideoita
 
--2. asteen yhtälöiden ratkaisu.
--logaritmilaskin.
--tilastollisia ja todennäköisyyslaskentaan liittyviä ominaisuuksia esim. Permutaatio tai binomikaava.
--jokin simppeli graafinen esitystapa lineaarisille funktioille
-
-Jatkokehitysideoita toteutetaan sen mukaan, miten paljon on aikaa ja mikä näyttää järkevältä.
 
