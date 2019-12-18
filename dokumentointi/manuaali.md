@@ -1,6 +1,12 @@
 # Manuaali
 
-Calculator-1.1 käynnistyy, kun ladatun jar-tiedoston properties "allow executing file as program"-valintaan käy laittamassa ruksin ja sen jälkeen tuplaklikkaa jar-tiedostoa. Calculatorilla on vain graafinen käyttöliittymä, eikä minkäänlaista tekstikäyttöliittymää.
+Ohjelman voi ladata osoitteesta: github.com/att78/ot-harjoitustyo. Sopiva versio löytyy releasien alta.
+
+Käynnistysohjeet koskevat erityisesti Linuxia, sillä harjoitustyö on tehty toimimaan ensisijaisesti Linux-ympäristössä. 
+Calculator-1.1 käynnistyy, kun ladatun jar-tiedoston properties "allow executing file as program"-valintaan käy laittamassa ruksin ja sen jälkeen tuplaklikkaa jar-tiedostoa. Calculatorilla on vain graafinen käyttöliittymä, eikä minkäänlaista tekstikäyttöliittymää. Sovelluksen voi käynnistää myös komentorivin kautta Linuxissa komennolla   ./Calculator-1.1.jar
+. Jos tästä tulee permission denied virheilmoitus, jar-tiedoston asetuksissa tulee sallia ajaminen ohjelmana edellä kuvatun tavoin.
+
+Windows-ympäristössä ohjelmaa on kokeiltu ja siellä käynnistäminen on ollut niinkin yksinkertaista kuin ohjelman lataus haluttuun kansioon ja tuplaklikkaus käynnistämiseksi.
 
 Ensimmäisenä funktiolaskimessa pääsee päävalikkoon, jossa on vaihtoehtoina yksinkertainen funktio, vektorien pistetulo, matriisitulo ja historia.
 
