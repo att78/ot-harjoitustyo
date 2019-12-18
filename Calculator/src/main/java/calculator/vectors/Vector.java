@@ -19,9 +19,9 @@ public class Vector {
 
     //numbers are given before list
     /**
-     * Testauksessa käytetty konstruktori
+     * Tähän konstruktoriin annetaan vektorin arvot ArrayListillä
      *
-     * @param values Vektorin arvot suoraan annettuna testauksessa
+     * @param values Vektorin arvot suoraan annettuna
      */
     public Vector(ArrayList<Double> values) {
         this.values = values;
