@@ -2,13 +2,11 @@
 
 ### Ohjelmointiprojektin tarkoitus: 
 
-Tarkoitus on luoda funktiolaskin, jonka avulla voi laskea esimerkiksi pieniä matriiseja syöttämällä matriisien tiedot laskimeen. Laskinta voi hyödyntää esimerkiksi lineaaristen yhtälöryhmien ratkaisussa.
-
-Käyttäjät: Alustavasti ohjelma ei vaadi loggautumista tai kirjautumista, joten käyttäjätietojen hallintaan tai keräämiseen ei ole mitään erityistä syytä. Projektissa pidetään kuitenkin vara siihen, että jonkinlainen käyttöhistorian kerääminen ja tallentaminen olisi mahdollista, jos se näyttäytyy käytön kannalta hyödyllisenä asiana.
+Sovellus on pieni funktiolaskin, joka tarjoaa mahdollisuuden suoran leikkauspisteiden selvittämiseen, vektorin skalaaritulon laskemiseen, matriisitulon laskemiseen. Tehdyt laskutoimitukset tallennetaan tietokantaan ja viimeksi laskettuja laskuja on mahdollisuus tarkastella History-sivulla. Ohjelma ei vaadi loggautumista tai kirjautumista, joten käyttäjäkohtaisia tietoja ei kerätä. 
 
 ### Käyttöliittymän kuvaus:
 
-Visuaalisesti on aloitusruutu, jolla on valikko. Valikosta mennään haluttuun toimintoon, jossa voidaan syöttää lähtötiedot ja jolla näkyy myös tulos. Ohjelman on tarkoitus toimia Linux Cubbli-ympäristössä, eikä muita käyttöjärjestelmiä tai mobiiliversiota ole tässä vaiheessa harkittu.
+Visuaalisesti on aloitusruutu, jolla on valikko. Valikosta mennään haluttuun toimintoon, jossa voidaan syöttää lähtötiedot ja jolla näkyy myös tulos. History-sivulla taas näkyy kaikki viimeaikaiset tulokset. Käyttöliittymä on graafinen, eikä tekstikäyttöliittymää ole. Graafisen käyttöliittymän kokoa käyttäjä voi muuttaa vetämällä haluamaan sivusta sovelluksen reunaa haluamaansa suuntaan. Vaikka sovelluksen periaatteessa on kätevää olla pienehkö, voi desimaalilukuja tai pitkiä vektoreita syöttävä käyttäjä hyötyä mahdollisuudesta levittää ikkunaa haluamaansa suuntaan.
 
 
 ### Toiminnallisuudet:
