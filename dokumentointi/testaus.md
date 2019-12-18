@@ -16,3 +16,11 @@ Varsinainen tietokannan toiminta jäi yksikkötestauksen ulkopuolelle suoraviiva
 
 
 
+# Järjestelmätestaus
+
+
+
+## Asennus
+
+Sovellus on haettu ja käynnistetty Linux Cubbli-ympäristössä manuaalissa kuvatuilla tavoilla.
+
