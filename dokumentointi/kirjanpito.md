@@ -21,8 +21,9 @@
 | 13.12   | 3       | UI:ta matriisitulolle 
 | 16.12   | 2       | Javadoceja kuntoon
 | 17.12   | 2       | Matriisitulo toimii+Nullpointer ihmettelyä  
-|                   |
-| Yhteensä  61h     |
+| 18.12   | 4       | try-catchailua ja dokumentoinnin parantelua 
+|         |         |
+| Yhteensä  65h     |
 
 
 
