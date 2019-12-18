@@ -18,9 +18,9 @@ import static org.junit.Assert.*;
  *
  * @author tallbera
  */
-public class MatrixTest {
+public class MatrixProductTest {
 
-    public MatrixTest() {
+    public MatrixProductTest() {
     }
 
     @BeforeClass
@@ -40,21 +40,22 @@ public class MatrixTest {
     }
 
     @Test
-    public void toStringTest() {
-        ArrayList<Double> values = new ArrayList();
-        values.add(1.0);
-        values.add(2.0);
-        Vector v = new Vector(values);
-        ArrayList<Vector> vectors = new ArrayList();
-        vectors.add(v);
-        vectors.add(v);
-        Matrix matrix = new Matrix(vectors);
-        String answer = matrix.toString();
-        assertEquals(answer, v.toString() + "\n" + v.toString());
+    public void matrixProductCorrect() {
+        Vector v = new Vector("1.0,2.0,3.0");
+        Matrix m = new Matrix();
+        m.addVector(v);
+        m.addVector(v);
+        MatrixProduct mm = new MatrixProduct(m, m);
+        mm.calculateMatrixProduct();
+        ArrayList<Vector> results = mm.getResults();
+        Matrix mmResults = new Matrix(results);
+
+        Matrix compare = new Matrix();
+        compare.addVector(new Vector("14.0,14.0"));
+        compare.addVector(new Vector("14.0,14.0"));
+
+        assertEquals(compare.toString(), mmResults.toString());
 
     }
-    
-    
-
 
 }

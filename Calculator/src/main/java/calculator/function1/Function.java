@@ -25,7 +25,7 @@ public class Function {
      * @param x Käyttäjän antama syöte
      * @param c Käyttäjän antama syöte
      */
-    public Function(double y, double x, double c) {
+    public Function(double y, double x, double c) {        
         this.y = y;
         this.x = x;
         this.c = c;

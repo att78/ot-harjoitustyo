@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class Matrix {
 
-    ArrayList<Vector> matrix;
+    ArrayList<Vector> matrix = new ArrayList();
 
     /**
      * tyhjä konstruktori käyttäjän syötettä varten.
@@ -53,7 +53,7 @@ public class Matrix {
      */
     public void addVector(Vector v) {
         //if same length
-        if (matrix.isEmpty()) {
+        if (matrix.size() == 0) {
             matrix.add(v);
         } else if (matrix.get(0).getValues().size() == v.getValues().size()) {
             matrix.add(v);

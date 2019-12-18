@@ -56,8 +56,8 @@ public class Vector {
      *
      * @return vektorin pituus eli skalaaritulo vektori itsellään kerrottuna
      */
-    public double vectorLength() {
-        Vector v = new Vector(this.values);
+    public double vectorLength(Vector v) {
+        
         ScalarProduct length = new ScalarProduct(v, v);
         length.scalarProduct();
         double result = length.getScaProduct();

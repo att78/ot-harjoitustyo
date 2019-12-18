@@ -51,7 +51,7 @@ public class MatrixProduct {
 
         for (int i = 0; i < matrixA.getMatrix().size(); i++) {
             ArrayList<Double> vector = new ArrayList();
-            for (int j = 0; j < matrixA.getMatrix().get(0).getValues().size(); j++) {
+            for (int j = 0; j < matrixB.getMatrix().size(); j++) {
                 ScalarProduct sc = new ScalarProduct(matrixA.getMatrix().get(i), matrixB.getMatrix().get(j));
                 sc.scalarProduct();
                 //calculation of vectors here
@@ -66,6 +66,12 @@ public class MatrixProduct {
         return results;
 
     }
+
+    public ArrayList<Vector> getResults() {
+        return results;
+    }
+    
+    
 
     /**
      * Muodostaa String-muotoisen lauseen matriisitulon tuloksista

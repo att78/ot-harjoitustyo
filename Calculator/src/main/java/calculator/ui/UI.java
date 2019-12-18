@@ -74,11 +74,14 @@ public class UI extends Application {
         matrixPro.setPrefWidth(175);
         Button history = new Button("History");
         history.setPrefWidth(175);
+        Button vectorLength = new Button("VectorLength");
+        vectorLength.setPrefWidth(175);
         VBox list = new VBox();
         BorderPane viewMain = new BorderPane();
         list.getChildren().add(new Label("List of operations:"));
         list.getChildren().add(function1);
         list.getChildren().add(scalarPro);
+        list.getChildren().add(vectorLength);
         list.getChildren().add(matrixPro);
         list.getChildren().add(history);
         viewMain.setPrefSize(400, 400);
@@ -88,6 +91,7 @@ public class UI extends Application {
         scalarPro.setOnAction((event) -> view.setCenter(scalarPage(view)));
         matrixPro.setOnAction((event) -> view.setCenter(matrixPage(view)));
         history.setOnAction((event) -> view.setCenter(historyPage(view)));
+        vectorLength.setOnAction((event) -> view.setCenter(vectorPage(view)));
 
         return viewMain;
     }
@@ -131,14 +135,23 @@ public class UI extends Application {
         functionInput.getChildren().add(solution);
 
         solve.setOnAction((event) -> {
-            double givenY = Double.parseDouble(yValue.getText());
-            double givenX = Double.parseDouble(xValue.getText());
-            double givenC = Double.parseDouble(cValue.getText());
-            Function f = new Function(givenY, givenX, givenC);
-            String answer = f.toString();
-            solution.setText(answer);
-            String toHistory = f.toHistory();
-            history.add(toHistory);
+            if (yValue.getText().equals("") || yValue.getText().equals(".")) {
+                solution.setText("Y-value was not properly given");
+            } else if (xValue.getText().equals("") || xValue.getText().equals(".")) {
+                solution.setText("X-value was not properly given");
+            } else if (cValue.getText().equals("") || cValue.getText().equals(".")) {
+                solution.setText("C-value was not properly given");
+            } else {
+
+                double givenY = Double.parseDouble(yValue.getText());
+                double givenX = Double.parseDouble(xValue.getText());
+                double givenC = Double.parseDouble(cValue.getText());
+                Function f = new Function(givenY, givenX, givenC);
+                String answer = f.toString();
+                solution.setText(answer);
+                String toHistory = f.toHistory();
+                history.add(toHistory);
+            }
         });
 
         functionInput.setSpacing(10);
@@ -182,13 +195,17 @@ public class UI extends Application {
         content.getChildren().add(main);
         scalar.setCenter(content);
         solve.setOnAction((event) -> {
-            Vector vectorFirst = new Vector(vector1.getText());
-            Vector vectorSecond = new Vector(vector2.getText());
-            ScalarProduct sc = new ScalarProduct(vectorFirst, vectorSecond);
-            sc.scalarProduct();
-            String answer = sc.toString();
-            solution.setText(answer);
-            history.add(answer);
+            try {
+                Vector vectorFirst = new Vector(vector1.getText());
+                Vector vectorSecond = new Vector(vector2.getText());
+                ScalarProduct sc = new ScalarProduct(vectorFirst, vectorSecond);
+                sc.scalarProduct();
+                String answer = sc.toString();
+                solution.setText(answer);
+                history.add(answer);
+            } catch (Exception e) {
+                solution.setText("Wrong input");
+            }
 
         });
 
@@ -257,34 +274,48 @@ public class UI extends Application {
         matrixPro.setBottom(main);
 
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
-        addNew.setOnAction((event)->{
-            Vector v = new Vector(vector1.getText());
-            rowVectors.add(v);
-            Matrix m = new Matrix(rowVectors);
-            String input = m.toString();
-            inputLeft.setText(input);
+        addNew.setOnAction((event) -> {
+            try {
+                Vector v = new Vector(vector1.getText());
+                rowVectors.add(v);
+                Matrix m = new Matrix(rowVectors);
+                String input = m.toString();
+                inputLeft.setText(input);
+            } catch (Exception e) {
+                inputLeft.setText("Input failed");
+            }
+
         });
-       addNew2.setOnAction((event)->{
-            Vector v = new Vector(vector2.getText());
-            columnVectors.add(v);
-            Matrix m = new Matrix(columnVectors);
-            String input= m.toString();
-            inputRight.setText(input);
+        addNew2.setOnAction((event) -> {
+            try {
+                Vector v = new Vector(vector2.getText());
+                columnVectors.add(v);
+                Matrix m = new Matrix(columnVectors);
+                String input = m.toString();
+                inputRight.setText(input);
+            } catch (Exception e) {
+                inputRight.setText("Input failed");
+            }
+
         });
-       result.setOnAction((event)->{
-           Matrix rows = new Matrix(rowVectors);
-           Matrix columns = new Matrix(columnVectors);
-           MatrixProduct mp = new MatrixProduct(rows,columns);
-           ArrayList<Vector> calculated= mp.calculateMatrixProduct();
-           Matrix endResult = new Matrix(calculated);
-           String answer = endResult.toString();
-           history.add(answer);
-           showResult.setText(answer);
-           
-           rowVectors.clear();
-           columnVectors.clear();
-       });
-        
+        result.setOnAction((event) -> {
+            try {
+                Matrix rows = new Matrix(rowVectors);
+                Matrix columns = new Matrix(columnVectors);
+                MatrixProduct mp = new MatrixProduct(rows, columns);
+                ArrayList<Vector> calculated = mp.calculateMatrixProduct();
+                Matrix endResult = new Matrix(calculated);
+                String answer = endResult.toString();
+                history.add(answer);
+                showResult.setText(answer);
+
+                rowVectors.clear();
+                columnVectors.clear();
+            } catch (Exception e){
+             showResult.setText("MatrixProduct could not be calculated");
+            }
+            
+        });
 
         return matrixPro;
     }
@@ -321,6 +352,45 @@ public class UI extends Application {
         });
 
         return historyPane;
+    }
+
+    public BorderPane vectorPage(BorderPane view) {
+        BorderPane lengthPane = new BorderPane();
+        lengthPane.setPrefSize(400, 400);
+        TextField vector1 = new TextField();
+        vector1.setMaxWidth(200);
+        vector1.textProperty().addListener(new VectorListener(vector1));
+        Button result = new Button("Vector length");
+        Label solution = new Label("");
+        VBox content = new VBox();
+        content.getChildren().add(new Label("Give vector in form 1,2,3" + "\n"));
+        content.getChildren().add(vector1);
+        content.getChildren().add(result);
+        content.getChildren().add(solution);
+
+        result.setOnAction((event) -> {
+            try{
+            Vector vectorFirst = new Vector(vector1.getText());
+            ScalarProduct sc = new ScalarProduct(vectorFirst, vectorFirst);
+            sc.scalarProduct();
+            String answer = sc.toString();
+            solution.setText(answer);
+            history.add(answer);
+            }catch(Exception e){
+            solution.setText("VectorLength could not be calculated.");
+            
+            }
+            
+        });
+
+        Button main = new Button("Back to Main");
+        main.setOnAction((event) -> view.setCenter(frontPage(view)));
+
+        lengthPane.setCenter(content);
+        lengthPane.setBottom(main);
+
+        return lengthPane;
+
     }
 
 }

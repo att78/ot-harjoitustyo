@@ -74,7 +74,7 @@ public class ScalarProductTest {
         values.add(1.0);
 
         Vector v = new Vector(values);
-        double result = v.vectorLength();
+        double result = v.vectorLength(v);
         assertTrue(result == 3);
 
     }
