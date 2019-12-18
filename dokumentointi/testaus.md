@@ -8,6 +8,11 @@ Laskutoimitukset ovat jakautuneet omiin luokkiinsa, jotka ovat jaettu johdonmuka
 
 Yleisesti testauksen kohteena ovat olleet pääasiassa konstruktorien toimivuus, haluttujen laskutoimitusten toimivuus sekä laskutulosten näyttämiseen ja tietokantaan tallentamiseen liittyvät toString()- ja toHistory()-metodit.
 
-Varsinainen tietokannan toiminta jäi yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. 
+
+## Testauskattavuus
+
+Varsinainen tietokannan toiminta jäi yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit
+
+
 
 
