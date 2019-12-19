@@ -311,10 +311,10 @@ public class UI extends Application {
 
                 rowVectors.clear();
                 columnVectors.clear();
-            } catch (Exception e){
-             showResult.setText("MatrixProduct could not be calculated");
+            } catch (Exception e) {
+                showResult.setText("MatrixProduct could not be calculated");
             }
-            
+
         });
 
         return matrixPro;
@@ -369,18 +369,18 @@ public class UI extends Application {
         content.getChildren().add(solution);
 
         result.setOnAction((event) -> {
-            try{
-            Vector vectorFirst = new Vector(vector1.getText());
-            ScalarProduct sc = new ScalarProduct(vectorFirst, vectorFirst);
-            sc.scalarProduct();
-            String answer = sc.toString();
-            solution.setText(answer);
-            history.add(answer);
-            }catch(Exception e){
-            solution.setText("VectorLength could not be calculated.");
-            
+            try {
+                Vector vectorFirst = new Vector(vector1.getText());
+                ScalarProduct sc = new ScalarProduct(vectorFirst, vectorFirst);
+                sc.scalarProduct();
+                String answer = vectorFirst.toHistory(vectorFirst);
+                solution.setText(answer);
+                history.add(answer);
+            } catch (Exception e) {
+                solution.setText("VectorLength could not be calculated.");
+
             }
-            
+
         });
 
         Button main = new Button("Back to Main");

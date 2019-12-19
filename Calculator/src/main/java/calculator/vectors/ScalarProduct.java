@@ -28,6 +28,7 @@ public class ScalarProduct {
             this.a = a;
             this.b = b;
         }
+
     }
 
     /**

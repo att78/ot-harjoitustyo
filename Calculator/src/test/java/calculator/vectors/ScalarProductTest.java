@@ -66,17 +66,7 @@ public class ScalarProductTest {
         assertTrue(s.toString().equals("ScalarProduct of " + a.toString() + " and " + b.toString() + " is " + s.getScaProduct()));
     }
 
-    @Test
-    public void vectorLength() {
-        ArrayList<Double> values = new ArrayList();
-        values.add(1.0);
-        values.add(1.0);
-        values.add(1.0);
-
-        Vector v = new Vector(values);
-        double result = v.vectorLength(v);
-        assertTrue(result == 3);
-
-    }
+   
+    
 
 }

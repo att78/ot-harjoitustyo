@@ -57,16 +57,19 @@ public class Vector {
      * @return vektorin pituus eli skalaaritulo vektori itsellään kerrottuna
      */
     public double vectorLength(Vector v) {
-        
+
         ScalarProduct length = new ScalarProduct(v, v);
         length.scalarProduct();
         double result = length.getScaProduct();
+        double answer = Math.sqrt(result);
 
-        return result;
+        return answer;
     }
 
     // vektorin tostring
     /**
+     * Vektorin toString-metodi, jota käytetään vektorin esittämiseen oikeasa
+     * muodossa.
      *
      * @return palauttaa vektorin arvot. Metodia käytetään skalaaritulon
      * vastauksessa ja vektorien tallentamisessa History-tietokantaan
@@ -75,6 +78,20 @@ public class Vector {
 
         String answer = this.values.toString();
 
+        return answer;
+    }
+
+    /**
+     * Metodi huolehtii tiedon palauttamisesta esitettävässä muodossa.
+     *
+     * @param v metodille annetaan parametrina vektori, jonka tiedot halutaan.
+     * @return palauttaa näytettävän ja talletettavan String-muotoisen
+     * esityksen.
+     */
+    public String toHistory(Vector v) {
+
+        double length = v.vectorLength(v);
+        String answer = "Length of vector " + v.toString() + " is " + length;
         return answer;
     }
 
