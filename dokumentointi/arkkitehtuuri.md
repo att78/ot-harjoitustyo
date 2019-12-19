@@ -16,6 +16,7 @@ Käyttöliittymä sisältää main-näkymän, josta pääsee laskutoimituksiin j
 ## Sovelluslogiikka
 
 Ensimmäisen asteen suoran leikkauskohtien laskeminen on hyvin suoraviivaista. Oheinen sekvenssikaavio kuvastaa leikkauskohtien laskemiseen liittyvää sovelluslogiikkaa.
+
 ![sekvenssikaavio funktiosta](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/funktio.png)
 
 
@@ -24,6 +25,7 @@ Oheinen sekvenssikaavio antaa esimerkin sovelluslogiikasta skalaaritulon osalta.
 ![Sekvenssikaavio skalaaritulosta](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/Sekvenssikaavio%20skalaaritulosta%20(1).png)
 
 Matriisitulon laskeminen on CalculatorApplicationin monimutkaisin asia niin matemaattisesti kuin sovelluslogiikan osalta.
+
 ![Sekvenssikaavio matriisitulosta](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/matriisitulo.png)
 
 
