@@ -1,6 +1,6 @@
 # Manuaali
 
-Ohjelman voi ladata osoitteesta: github.com/att78/ot-harjoitustyo. Sopiva versio löytyy releasien alta.
+Ohjelman voi ladata osoitteesta: github.com/att78/ot-harjoitustyo. Sopiva versio löytyy releasien alta. Suositus on tietenkin ottaa uusin, mutta vanhemmatkin sisältävät täysin toimivia ominaisuuksia.
 
 Käynnistysohjeet koskevat erityisesti Linuxia, sillä harjoitustyö on tehty toimimaan ensisijaisesti Linux-ympäristössä. 
 Calculator-1.1 käynnistyy, kun ladatun jar-tiedoston properties "allow executing file as program"-valintaan käy laittamassa ruksin ja sen jälkeen tuplaklikkaa jar-tiedostoa. Calculatorilla on vain graafinen käyttöliittymä, eikä minkäänlaista tekstikäyttöliittymää. Sovelluksen voi käynnistää myös komentorivin kautta Linuxissa komennolla   ./Calculator-1.1.jar
@@ -14,7 +14,7 @@ Ensimmäisenä funktiolaskimessa pääsee päävalikkoon, jossa on vaihtoehtoina
 
 ## Funktio
 
-Painamalla Simple Function pääsee laskeman suoran leikkauspisteet x-akselin ja y-akselin suhteen.  Lukuja antaessa kannattaa huomata, että desimaalierottimena toimii piste eikä pilkku. Simple Functionista pääsee takaisin päävalikkoon painamalla “Main"-nappia
+Painamalla Simple Function pääsee laskeman suoran leikkauspisteet x-akselin ja y-akselin suhteen.  Lukuja antaessa kannattaa huomata, että desimaalierottimena toimii piste eikä pilkku. Arvoista Y-value tarkoittaa y=x+c tyyppisen yhtälön y:n kerrointa. X-value tarkoittaa x:n arvoa ja c tarkoittaa yhtälössä olevaa mahdollista vakiota.(c=constant) Simple Functionista pääsee takaisin päävalikkoon painamalla “Main"-nappia. 
 
 
 ## Skalaaritulo
