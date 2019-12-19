@@ -11,16 +11,19 @@ Yleisesti testauksen kohteena ovat olleet pääasiassa konstruktorien toimivuus,
 
 ## Testauskattavuus
 
-Varsinainen tietokannan toiminta jäi yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit
+Varsinainen tietokannan toiminta jäi(?) yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit
 
 
 
 
 # Järjestelmätestaus
 
-
+Sovelluksen järjestelmätestaus on ollut suurimmalta osin käsityötä.
 
 ## Asennus
 
-Sovellus on haettu ja käynnistetty Linux Cubbli-ympäristössä manuaalissa kuvatuilla tavoilla.
+Sovellus on haettu ja käynnistetty Linux Cubbli-ympäristössä manuaalissa kuvatuilla tavoilla. Sovelluksen toimivuutta on testattu myös muissa käyttöjärjestelmissä ja näin sovellus on havaittu vakaaksi.
 
+## Toiminnallisuudet
+
+Kaikki toiminnallisuudet on testattu manuaalisesti sekä toimivilla lähtöarvoilla, että virheellisillä syötteillä. Käyttäjän mahdollisuutta virheellisiin syötteisiin on rajoitettu regexillä. Käyttöliittymä tarkastaa syötteet vielä try-catch:illa ja epäonnistuneita syötteitä kommentoidaan vastauskentissä virheilmoituksilla, jotka kertovat jotakin virheestä. Myös näiden virheilmoitusten opastavuutta on pyritty manuaalisesti arvioimaan.
