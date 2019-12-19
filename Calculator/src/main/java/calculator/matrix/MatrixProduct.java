@@ -70,8 +70,6 @@ public class MatrixProduct {
     public ArrayList<Vector> getResults() {
         return results;
     }
-    
-    
 
     /**
      * Muodostaa String-muotoisen lauseen matriisitulon tuloksista

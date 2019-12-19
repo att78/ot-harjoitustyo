@@ -66,7 +66,4 @@ public class ScalarProductTest {
         assertTrue(s.toString().equals("ScalarProduct of " + a.toString() + " and " + b.toString() + " is " + s.getScaProduct()));
     }
 
-   
-    
-
 }
