@@ -31,7 +31,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class UI extends Application {
-
+    
     History history;
 
     /**
@@ -47,7 +47,7 @@ public class UI extends Application {
         } catch (Exception ex) {
             Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
         Button function1 = new Button("Simple Function");
         BorderPane view = new BorderPane();
         BorderPane viewMain = frontPage(view);
@@ -56,7 +56,7 @@ public class UI extends Application {
         window.setScene(scene);
         window.setTitle("Function Calculator");
         window.show();
-
+        
     }
 
     /**
@@ -87,13 +87,13 @@ public class UI extends Application {
         list.setSpacing(5);
         viewMain.setPrefSize(400, 400);
         viewMain.setCenter(list);
-
+        
         function1.setOnAction((event) -> view.setCenter(functionPage(view)));
         scalarPro.setOnAction((event) -> view.setCenter(scalarPage(view)));
         matrixPro.setOnAction((event) -> view.setCenter(matrixPage(view)));
         history.setOnAction((event) -> view.setCenter(historyPage(view)));
         vectorLength.setOnAction((event) -> view.setCenter(vectorPage(view)));
-
+        
         return viewMain;
     }
 
@@ -104,25 +104,25 @@ public class UI extends Application {
      * @return palauttaa funktionlaskentasivun rakentavan BorderPane-olion
      */
     public BorderPane functionPage(BorderPane view) {
-
+        
         BorderPane viewFunction = new BorderPane();
         Button main = new Button("Back to Main");
         Label yLabel = new Label("Give y:");
         TextField yValue = new TextField();
         yValue.setMaxWidth(200);
-
+        
         yValue.textProperty().addListener(new NumberListener(yValue));
-
+        
         Label xLabel = new Label("Give x:");
         TextField xValue = new TextField();
         xValue.setMaxWidth(200);
         xValue.textProperty().addListener(new NumberListener(xValue));
-
+        
         Label cLabel = new Label("Give c:");
         TextField cValue = new TextField();
         cValue.setMaxWidth(200);
         cValue.textProperty().addListener(new NumberListener(cValue));
-
+        
         Button solve = new Button("Solve x and y");
         Label solution = new Label("");
         VBox functionInput = new VBox();
@@ -134,7 +134,8 @@ public class UI extends Application {
         functionInput.getChildren().add(cValue);
         functionInput.getChildren().add(solve);
         functionInput.getChildren().add(solution);
-
+        functionInput.setSpacing(5);
+        
         solve.setOnAction((event) -> {
             if (yValue.getText().equals("") || yValue.getText().equals(".")) {
                 solution.setText("Y-value was not properly given");
@@ -143,7 +144,7 @@ public class UI extends Application {
             } else if (cValue.getText().equals("") || cValue.getText().equals(".")) {
                 solution.setText("C-value was not properly given");
             } else {
-
+                
                 double givenY = Double.parseDouble(yValue.getText());
                 double givenX = Double.parseDouble(xValue.getText());
                 double givenC = Double.parseDouble(cValue.getText());
@@ -154,13 +155,13 @@ public class UI extends Application {
                 history.add(toHistory);
             }
         });
-
+        
         functionInput.setSpacing(10);
-
+        
         viewFunction.setPrefSize(400, 400);
         viewFunction.setBottom(main);
         viewFunction.setCenter(functionInput);
-
+        
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return viewFunction;
     }
@@ -177,11 +178,11 @@ public class UI extends Application {
         TextField vector1 = new TextField();
         vector1.setMaxWidth(200);
         vector1.textProperty().addListener(new VectorListener(vector1));
-
+        
         TextField vector2 = new TextField();
         vector2.setMaxWidth(200);
         vector2.textProperty().addListener(new VectorListener(vector2));
-
+        
         Button main = new Button("Back to Main");
         Button solve = new Button("Solve");
         Label solution = new Label();
@@ -194,6 +195,7 @@ public class UI extends Application {
         content.getChildren().add(solve);
         content.getChildren().add(solution);
         content.getChildren().add(main);
+        content.setSpacing(5);
         scalar.setCenter(content);
         solve.setOnAction((event) -> {
             try {
@@ -207,9 +209,9 @@ public class UI extends Application {
             } catch (Exception e) {
                 solution.setText("Wrong input");
             }
-
+            
         });
-
+        
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         return scalar;
     }
@@ -221,10 +223,10 @@ public class UI extends Application {
      * @return palautta matriisitulo-näkymän rakentavan BorderPane-olion
      */
     public BorderPane matrixPage(BorderPane view) {
-
+        
         ArrayList<Vector> rowVectors = new ArrayList();
         ArrayList<Vector> columnVectors = new ArrayList();
-
+        
         BorderPane matrixPro = new BorderPane();
         Label info = new Label("Matrixes are given as vectors");
         Label firstMatrix = new Label("Rows for first Matrix");
@@ -232,11 +234,11 @@ public class UI extends Application {
         TextField vector1 = new TextField();
         vector1.setMaxWidth(175);
         vector1.textProperty().addListener(new VectorListener(vector1));
-
+        
         TextField vector2 = new TextField();
         vector2.setMaxWidth(175);
         vector2.textProperty().addListener(new VectorListener(vector2));
-
+        
         Button main = new Button("Back to Main");
         VBox content = new VBox();
         HBox inputLabels = new HBox();
@@ -253,16 +255,16 @@ public class UI extends Application {
         addVectors.getChildren().add(addNew);
         addVectors.getChildren().add(new Label("  "));
         addVectors.getChildren().add(addNew2);
-
-        Label inputLeft = new Label("beep");
-        Label inputRight = new Label("beep");
+        
+        Label inputLeft = new Label("");
+        Label inputRight = new Label("");
         HBox inputs = new HBox();
         inputs.getChildren().add(inputLeft);
         inputs.getChildren().add(new Label("                                    "));
         inputs.getChildren().add(inputRight);
         Button result = new Button("Calculate matrixproduct");
-        Label showResult = new Label("beep");
-
+        Label showResult = new Label("");
+        
         content.getChildren().add(info);
         content.getChildren().add(inputLabels);
         content.getChildren().add(inputText);
@@ -270,10 +272,10 @@ public class UI extends Application {
         content.getChildren().add(inputs);
         content.getChildren().add(result);
         content.getChildren().add(showResult);
-
+        content.setSpacing(5);
         matrixPro.setCenter(content);
         matrixPro.setBottom(main);
-
+        
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         addNew.setOnAction((event) -> {
             try {
@@ -285,7 +287,7 @@ public class UI extends Application {
             } catch (Exception e) {
                 inputLeft.setText("Input failed");
             }
-
+            
         });
         addNew2.setOnAction((event) -> {
             try {
@@ -297,7 +299,7 @@ public class UI extends Application {
             } catch (Exception e) {
                 inputRight.setText("Input failed");
             }
-
+            
         });
         result.setOnAction((event) -> {
             try {
@@ -309,15 +311,15 @@ public class UI extends Application {
                 String answer = endResult.toString();
                 history.add(answer);
                 showResult.setText(answer);
-
+                
                 rowVectors.clear();
                 columnVectors.clear();
             } catch (Exception e) {
                 showResult.setText("MatrixProduct could not be calculated");
             }
-
+            
         });
-
+        
         return matrixPro;
     }
 
@@ -336,25 +338,25 @@ public class UI extends Application {
         Button main = new Button("Back to Main");
         content.getChildren().add(showHistory);
         content.getChildren().add(hist);
-
+        
         historyPane.setCenter(content);
         historyPane.setBottom(main);
-
+        
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
         showHistory.setOnAction((event) -> {
-
+            
             String answer = "";
             for (int i = 0; i < history.list().size(); i++) {
                 answer += history.list().get(i) + "\n";
             }
-
+            
             hist.setText(answer);
-
+            
         });
-
+        
         return historyPane;
     }
-
+    
     public BorderPane vectorPage(BorderPane view) {
         BorderPane lengthPane = new BorderPane();
         lengthPane.setPrefSize(400, 400);
@@ -368,7 +370,7 @@ public class UI extends Application {
         content.getChildren().add(vector1);
         content.getChildren().add(result);
         content.getChildren().add(solution);
-
+        
         result.setOnAction((event) -> {
             try {
                 Vector vectorFirst = new Vector(vector1.getText());
@@ -379,19 +381,19 @@ public class UI extends Application {
                 history.add(answer);
             } catch (Exception e) {
                 solution.setText("VectorLength could not be calculated.");
-
+                
             }
-
+            
         });
-
+        
         Button main = new Button("Back to Main");
         main.setOnAction((event) -> view.setCenter(frontPage(view)));
-
+        
         lengthPane.setCenter(content);
         lengthPane.setBottom(main);
-
+        
         return lengthPane;
-
+        
     }
-
+    
 }
