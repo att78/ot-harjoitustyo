@@ -84,6 +84,7 @@ public class UI extends Application {
         list.getChildren().add(vectorLength);
         list.getChildren().add(matrixPro);
         list.getChildren().add(history);
+        list.setSpacing(5);
         viewMain.setPrefSize(400, 400);
         viewMain.setCenter(list);
 
