@@ -32,6 +32,7 @@ Painamalla VectorLength pääsee laskemaan vektorin pituus. Vektori annetaan muo
 
 ## Matriisitulo
 Painamalla MatrixProduct pääsee laskemaan matriisituloa. Matriisitulossa tulee huomioida, että ensimmäinen matriisi annetaan rivivektoreina ja toinen matriisi annetaan sarakevektoreina. Vektoreita antaa joko ensin kaikki ensimmäiseen vektoriin tai vuorotellen molempiin. Syötetyt vektorit näkyvät riveittäin syöttöön käytetyn tekstikentän alapuolella. Kannattaa siis huomata, että toinen kerrottava matriisi annetaan sarakeittain, mutta syötetyt tiedot näkyvät silti riveittäin. Kun vektorit on annettu, Calculate matrixproduct napilla saa tuloksen. 
+
 ![Matriisitulo](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/matrixfinal.png)
 
 
