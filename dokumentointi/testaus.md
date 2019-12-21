@@ -13,11 +13,18 @@ Yleisesti testauksen kohteena ovat olleet pääasiassa konstruktorien toimivuus,
 
 Varsinainen tietokannan toiminta jäi(?) yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit, siten että calculator-paketista ei testata CalculatorApplication-luokkaa ja calculator.ui-paketista ei testata mitään.
 
-Funktio-luokan testaustilanne näyttää tältä:
+Function-luokan testaustilanne näyttää tältä:
 
 ![Funktio](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/functionTotal.png)
 
 
+Matrix-luokan testausraportti näyttää tältä:
+
+![Matrix](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/matrixtotal.png)
+
+MatrixProduct eli matriisitulo on myös testattu melko kattavasti. ToString-testi jätettiin pois, koska tämän luokan toStringin muodostaa oleellisesti Matrix-luokan toString joten tarvittavan tiedon toStringin toiminnasta sai jo Matrix-luokan vastaavan metodin testauksella:
+
+![MatrixProduct](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/matriisitulototal.png)
 
 
 
