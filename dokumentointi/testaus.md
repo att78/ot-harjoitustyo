@@ -13,6 +13,13 @@ Yleisesti testauksen kohteena ovat olleet pääasiassa konstruktorien toimivuus,
 
 Varsinainen tietokannan toiminta jäi yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit, siten että calculator-paketista ei testata CalculatorApplication-luokkaa ja calculator.ui-paketista ei testata mitään. UI-luokan sisällä on graafisen käyttöliittymän rakentava UI-luokka ja kaksi Listeneriä, jotka rajoittavat käyttäjän mahdollisuuksia virhesyötteisiin. Tulkitsin Molempien NumberListener- ja VectorListener-luokkien olevan oleellisesti osa graafista käyttöliittymää ja siten testauksen piiriin kuulumattomia. Näin on ollut myös viikkotarkastuksissa.
 
+Kokonaiskuva testauksesta: 
+
+![Total](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/total.png)
+
+
+
+
 Function-luokan testaustilanne näyttää tältä:
 
 ![Funktio](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/functionTotal.png)
