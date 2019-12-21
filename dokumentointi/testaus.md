@@ -31,9 +31,11 @@ Vector-luokan testauskattavuus on seuraavanlainen:
 ![Vector](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/vektoritotal.png)
 
 
+Skalaaritulon laskevan luokan ScalarProduct testauksesta jätettiin pois getterien testaus. ScalarProduct-luokan testauskattavuus on seuraavanlainen:
 
+![ScalarProduct](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/scalartotal.png)
 
-
+Yleisesti ottaen testauskattavuus on melko korkea. Poikkeuksen tekee History-luokka, joka on pieni ja suoraviivainen tietokantaluokka. 
 
 
 
