@@ -11,10 +11,10 @@ Harjoitustyön release käynnistyy, kun ladatun jar-tiedoston properties  "allow
 Työaikakirjanpito:
 [Linkki kirjanpito.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kirjanpito.md)
 
-Alustava vaatimusmäärittely:
+Vaatimusmäärittely:
 [Linkki maarittely.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/maarittely.md)
 
-Alustava kuva arkkitehtuurin rungosta:
+Arkkitehtuurin kuvaus:
 [Linkki arkkitehtuuri.md:hen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
 Manuaali:
