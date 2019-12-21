@@ -1,7 +1,7 @@
 # HARJOITUSTYÖ
 
 Tämä on **Ohjelmistotekniikan harjoitustyö**. Aiheena on funktiolaskin. 
-Tässä vaiheessa ohjelmassa toimii yhden lineaarisen suoran ratkaiseminen niin x-akselin kuin y-akselin suhteen ja kahden vektorin pistetulo. Myöhemmin olisi tarkoitus lisätä lisää toimintoja.
+Tässä vaiheessa ohjelmassa toimii yhden lineaarisen suoran ratkaiseminen niin x-akselin kuin y-akselin suhteen ja kahden vektorin pistetulo. Ohjelma laskee myös vektorin pituuden ja kahden matriisin matriisitulon.
 
 Harjoitustyön release käynnistyy, kun ladatun jar-tiedoston properties  "allow executing file as program"-valintaan käy laittamassa ruksin ja sen jälkeen tuplaklikkaa jar-tiedostoa. Calculatorilla on vain graafinen käyttöliittymä, eikä minkäänlaista tekstikäyttöliittymää.
 
