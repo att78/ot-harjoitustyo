@@ -20,6 +20,8 @@ Alustava kuva arkkitehtuurin rungosta:
 Manuaali:
 [Linkki manuaaliin](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/manuaali.md)
 
+Testausdokumentti:
+[Linkki testaukseen](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/testaus.md)
 
 ## RELEASES
 1. Release:
