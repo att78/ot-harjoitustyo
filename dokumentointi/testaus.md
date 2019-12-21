@@ -22,13 +22,27 @@ Matrix-luokan testausraportti näyttää tältä:
 
 ![Matrix](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/matrixtotal.png)
 
-MatrixProduct eli matriisitulo on myös testattu melko kattavasti. ToString-testi jätettiin pois, koska tämän luokan toStringin muodostaa oleellisesti Matrix-luokan toString joten tarvittavan tiedon toStringin toiminnasta sai jo Matrix-luokan vastaavan metodin testauksella:
+MatrixProduct eli matriisitulo on myös testattu melko kattavasti. ToString-testi jätettiin pois, koska tämän luokan toString-metodin muodostaa oleellisesti Matrix-luokan toString joten tarvittavan tiedon toiminnasta sai jo Matrix-luokan vastaavan metodin testauksella. Saman asian testaaminen kahteen kertaan ei olisi ollut harjoitustyön ohjeistuksessa mainittua järkevää testaamista. Alla MatrixProduct-luokan testiraportti:
 
 ![MatrixProduct](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/matriisitulototal.png)
+
+Vector-luokan testauskattavuus on seuraavanlainen:
+
+![Vector](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/vektoritotal.png)
+
+
+
+
+
 
 
 
 # Järjestelmätestaus
+
+
+
+
+
 
 Sovelluksen järjestelmätestaus on ollut suurimmalta osin käsityötä.
 
