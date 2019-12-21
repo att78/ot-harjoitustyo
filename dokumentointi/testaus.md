@@ -15,7 +15,7 @@ Varsinainen tietokannan toiminta jäi(?) yksikkötestauksen ulkopuolelle suoravi
 
 Funktio-luokan testaustilanne näyttää tältä:
 
-[Funktio](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/functionTotal.png)
+![Funktio](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/functionTotal.png)
 
 
 
