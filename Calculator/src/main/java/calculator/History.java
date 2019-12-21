@@ -77,6 +77,5 @@ public class History {
         }
         return results;
     }
-    // should I have method that allows showing only last 5 calculations?
 
 }
