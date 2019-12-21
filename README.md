@@ -30,6 +30,8 @@ Testausdokumentti:
 2. Release:
 [Linkki 2. versioon](https://github.com/att78/ot-harjoitustyo/releases/tag/viikko6)
 
+Lopullinen release:
+[Lopullinen palautus](https://github.com/att78/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## KOMENTORIVITOIMINNOT
 
