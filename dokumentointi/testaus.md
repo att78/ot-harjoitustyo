@@ -11,7 +11,12 @@ Yleisesti testauksen kohteena ovat olleet pääasiassa konstruktorien toimivuus,
 
 ## Testauskattavuus
 
-Varsinainen tietokannan toiminta jäi(?) yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit
+Varsinainen tietokannan toiminta jäi(?) yksikkötestauksen ulkopuolelle suoraviivaisuutensa takia. Käyttöliittymäkerros on jätetty ohjeiden mukaisesti kokonaan testauksen ulkopuolelle. Tämä kattaa calculator- ja calculator.ui-paketit, siten että calculator-paketista ei testata CalculatorApplication-luokkaa ja calculator.ui-paketista ei testata mitään.
+
+Funktio-luokan testaustilanne näyttää tältä:
+
+[Funktio](https://github.com/att78/ot-harjoitustyo/blob/master/dokumentointi/kuvat/functionTotal.png)
+
 
 
 
