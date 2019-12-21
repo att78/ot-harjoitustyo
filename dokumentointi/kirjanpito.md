@@ -22,8 +22,10 @@
 | 16.12   | 2       | Javadoceja kuntoon
 | 17.12   | 2       | Matriisitulo toimii+Nullpointer ihmettelyä  
 | 18.12   | 4       | try-catchailua ja dokumentoinnin parantelua 
+| 19.12   | 5       | sekalaista korjailua ja kuvien piirtelyä 
+| 21.12   | 1       | manuaalin parantelua jne
 |         |         |
-| Yhteensä  65h     |
+| Yhteensä  71h     |
 
 
 
