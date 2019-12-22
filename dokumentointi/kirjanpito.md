@@ -24,8 +24,9 @@
 | 18.12   | 4       | try-catchailua ja dokumentoinnin parantelua 
 | 19.12   | 5       | sekalaista korjailua ja kuvien piirtelyä 
 | 21.12   | 3       | manuaalin parantelua jne
+| 22.12   | 1       | dokumentoinnin korjausta ja releasen toimivuuden varmistus
 |         |         |
-| Yhteensä  73h     |
+| Yhteensä  74h     |
 
 
 
