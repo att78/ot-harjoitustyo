@@ -10,14 +10,15 @@ Visuaalisesti on aloitusruutu, jolla on valikko. Valikosta mennään haluttuun t
 
 
 ### Toiminnallisuudet:
-1. asteen funktion ratkaisu y-akselin ja x-akselin suhteen on toteutettu. TEHTY
+1. asteen funktion ratkaisu y-akselin ja x-akselin suhteen. Vastaus kertoo leikkauspisteen x-akselin ja y-akselin suhteen.
 
-Vektoritulo on toteutettu. TEHTY
+Vektoritulo. Vektoritulo laskee kahden vektorin skalaaritulon.
 
-Laskutoimitusten historiatietokanta. TEHTY
+Laskutoimitusten historiatietokanta. Historiatietokanta näyttää tehdyt laskutoimitukset.
 
-Matriisitulo TEHTY
+Matriisitulo. Matriisitulo laskee kahden matriisin matriisitulon.
 
+Vektorin pituus. Vektorin pituus ilmoittaa vektorin pituuden eli neliöjuuren vektorin skalaaritulosta itsensä kanssa.
 
 
 
